@@ -1,0 +1,13 @@
+.content#homepage {
+    p {
+        font-size: 5em;
+        color: $purple;
+        text-align: center;
+        padding: 45% 10%;
+        
+        @media #{$desktop} {
+            padding: 15%;    
+        }
+
+    }
+}

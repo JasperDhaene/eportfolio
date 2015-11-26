@@ -1,0 +1,16 @@
+.content#portfolio {
+    > h2 {
+        font-size: 150%;
+        text-align: center;
+        color: $purple;
+        margin-bottom: 30px;
+    }
+    
+    .project {
+        text-align: center;
+        h3 {
+            font-size: 80%;
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.content#about {
+    p {
+        @media #{$desktop} {
+                    
+        }
+    }
+
+    img {
+        @media #{$desktop} {
+            padding-right: 50px;
+        }
+    }
+}
