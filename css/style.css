@@ -1,6 +1,5 @@
 /* Variables */
 .content#homepage p {
-  color: #392a6d;
   text-align: center; }
 
 /*
@@ -21,34 +20,47 @@ html {
 
 header {
   width: 100%;
-  height: 10%;
   background-color: #111111; }
-  header > div i {
-    width: 20%;
-    box-sizing: border-box;
-    float: right;
-    color: #e4e0e5;
-    text-align: center; }
-  header > div h1 {
-    width: 80%;
-    box-sizing: border-box;
-    color: #fff247; }
+  header > div {
+    font-size: 2em;
+    padding: 10px; }
+    header > div i {
+      width: 20%;
+      box-sizing: border-box;
+      float: right;
+      color: #fff247;
+      text-align: center; }
+    header > div h1 {
+      width: 80%;
+      box-sizing: border-box;
+      color: #e4e0e5; }
   header > nav {
     display: none; }
-    header > nav ul li a {
-      color: #e4e0e5; }
-      header > nav ul li a:visited {
-        color: #e4e0e5; }
+    header > nav ul {
+      padding: 10px 0; }
+      header > nav ul li {
+        font-size: 2em;
+        margin: 10px 40px;
+        border-bottom: 1px solid #e4e0e5;
+        list-style: none; }
+        header > nav ul li:hover {
+          padding-left: 20px; }
+        header > nav ul li a {
+          color: #e4e0e5; }
+          header > nav ul li a:visited {
+            color: #e4e0e5; }
   header:hover nav {
     display: block; }
 
 div.content {
-  height: 80%;
+  height: 90%;
   width: 100%;
   overflow: auto;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 5em;
+  color: #033; }
 
 footer {
   height: 10%;
