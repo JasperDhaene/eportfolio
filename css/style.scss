@@ -1,6 +1,7 @@
 /* Variables */
 $black: #111111;
-$white: #e4e0e5;
+$white: #fff9ff;
+$gray: #e4e0e5;
 $purple: #392a6d;
 $green: #033;
 $yellow: #fff247;
@@ -23,106 +24,132 @@ $images: "../images/";
 @import 'contact';
 */
 
+@font-face {
+    font-family: 'AlexBrush';
+    src: url('../fonts/AlexBrush-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Allura';
+    src: url('../fonts/Allura-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 
     body {
         height: 100%;
-        a {
+        background-color: $white;
+        
+        a { //TODO find other place
             text-decoration: none;
         }
-    }
-}
+        
+        header {
+            width: 100%;
+            background-color: $green;
 
-header {
-    width: 100%;
-    //height: 10%;
-    //font-size: 2em;
-    background-color: $black;
-    
-    > div { //topbar section
-        font-size: 2em;
-        padding: 10px;
-        i {
-            width: 20%;
-            box-sizing: border-box;
-            float: right;
-            color: $yellow;
-            text-align: center;
+            > div { //topbar section
+                font-size: 2em;
+                padding: 10px;
+                i {
+                    //width: 10%;
+                    box-sizing: border-box;
+                    float: right;
+                    color: $yellow;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                    width: 80%;
+                    box-sizing: border-box;
+                    font-family: Allura;
+                    color: $gray;
+                    padding-left: 10px;
+                }
+            }
+
+
+            > nav { 
+                display: none;
+                ul {
+                    padding: 10px 0;
+                    li {
+                        font-size: 2em;
+                        margin: 10px 40px 10px 40px;
+                        border-bottom: 1px solid $white;
+                        list-style: none;
+
+                        &:hover {
+                            padding-left: 20px;    
+                        }
+
+                        a {
+
+                            color: $white;
+
+
+
+
+                            &:visited {
+                                color: $white;
+                            }    
+                        }
+                    }
+                }
+            }
+
+            //ANIMATION
+
+            &:hover {
+                nav {
+                    display: block;
+                }
+            }
         }
         
-        h1 {
-            width: 80%;
-            box-sizing: border-box;
-            color: $white;
-            
+        > div { //CONTENT SECTION
+            width: 100%;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5em;
+            color: $black;
+            text-align: center;
+            margin-top: 10%;
         }
-    }
-    
-      
-    > nav { 
-        display: none;
-        ul {
-            padding: 10px 0;
-            li {
+
+        footer {
+            height: 10%;
+
+            > div { //ICONS
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
                 font-size: 2em;
-                margin: 10px 40px;
-                border-bottom: 1px solid $white;
-                list-style: none;
-                
-                &:hover {
-                    padding-left: 20px;    
-                }
-                
+                margin: 10% 0;
                 a {
-                    color: $white;
-                    &:visited {
-                        color: $white;
-                    }    
-                }
-            }
-        }
-    }
-    
-    //ANIMATION
-    
-    &:hover {
-        nav {
-            display: block;
-        }
-    }
-}
-
-
-
-
-div.content {
-    height: 90%;
-    width: 100%;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5em;
-    color: $green;
-}
-
-footer {
-    height: 10%;
-    background-color: $black;
-    
-    > div { //icons
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        a {
-            i, i:visited {
-                color: $white;
-                &:hover {
-                    color: $yellow;
+                    i, i:visited {
+                        color: $black;
+                        &:hover {
+                            color: $green;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+
+
+
+
+
+
