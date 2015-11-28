@@ -1,0 +1,332 @@
+/* Variables */
+$black: #111111;
+$white: #e4e0e5;
+$purple: #392a6d;
+$green: #033;
+$yellow: #fff247;
+
+$font: Helvetica,Arial,sans-serif;
+
+$tablet: "(min-width: 481px) and (max-width: 768px)";
+$desktop: "(min-width: 769px)";
+
+$images: "../images/";
+
+@import 'homepage';
+@import 'about';
+@import 'i1talent';
+@import 'CV';
+@import 'portfolio';
+@import 'hobbies';
+@import 'links';
+@import 'contact';
+
+
+@font-face {
+	font-family: 'WAP8-Icons';
+	src:url('../fonts/icons/WAP8-Icons.eot');
+	src:url('../fonts/icons/WAP8-Icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icons/WAP8-Icons.svg#WAP8-Icons') format('svg'),
+		url('../fonts/icons/WAP8-Icons.woff') format('woff'),
+		url('../fonts/icons/WAP8-Icons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+    height: 100%;
+
+    body {
+        background-color: $white;
+        font-family: $font;
+        height: 100%;
+        
+        
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+header {
+    z-index: 42;
+    width: 100%;
+    height: 10%;
+    font-size: 2em;
+    
+    @media #{$desktop} {
+        font-size: 2em;
+        height: 12%;
+        background-color: $black;
+    }
+    
+    .topbar {
+        background-color: $black;
+        border-bottom: 1px solid $yellow;
+        margin: 0;
+        
+        @media #{$desktop} {
+            border: 0;
+        }
+
+        h1 {
+            color: $yellow;
+            text-align: center;
+            width: 90%;
+            margin: 0 5%;
+            padding: 4%;
+            box-sizing: border-box;
+            
+            @media #{$desktop} {
+                margin: 0 auto;
+                padding: 10px;
+            }
+        }
+
+        i {
+            padding: 4%;
+            font-size: 0.5em;
+            float: right;
+            color: $white;
+            
+            @media #{$desktop} {
+                display: none;
+            }
+        }
+
+    }
+    
+      
+    nav {        
+        ul {
+            height: 0;
+            z-index: 100;           
+            width: inherit;
+            list-style-type: none;
+            
+            @media #{$desktop} {
+                height: auto;
+                display: flex;
+                background-color: $black;
+                text-align: center;
+                justify-content: space-between;
+                align-items: baseline;
+                padding: 1%;
+            }
+
+            li {
+                font-size: 0.5em;
+                box-sizing: border-box;
+                text-align: center;
+                width: 50%;
+                margin: 0 auto;
+                padding: 15px;
+                visibility: hidden;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+                
+                @media #{$desktop} {
+                    font-size: 0.8em;
+                    visibility: visible;
+                    display: inline;
+                    //padding: 5px 1% ;
+                    //margin:  20px 1%;
+                    padding: 0;
+                    margin: 0;
+                }
+                a {
+                    display: block;
+                    color: $white;
+                    
+                    @media #{$desktop} {
+                        display: inline;
+                    }
+                }
+
+                &.current {
+                    border-color: $white;
+                }
+
+                &:hover {
+                    @media #{$desktop} {
+                        border-color: $white;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+    
+    &:hover {
+        
+        ul  {
+            display: block;
+            background-color: $black;
+            
+            height: 570px;
+            
+            -webkit-transition: height 1s linear;
+            -moz-transition: height 1s linear;
+            -o-transition: height 1s linear;
+            -ms-transition: height 1s linear;
+            transition: height 1s linear;
+            
+            @media #{$desktop} {
+                -moz-transition: none;
+                -webkit-transition: none;
+                -o-transition: height auto linear;
+                transition: none;
+    
+                height: auto;
+                display: flex;
+            }
+            
+            li {
+                animation-delay: 1s;
+                animation-name: visibile;
+                animation-fill-mode:forwards;
+                animation-timing-function: linear;
+
+
+                @keyframes visibile {
+                  from {
+                    visibility: hidden;
+                  }
+
+                  to {
+                    visibility: visible;
+                  }
+                }
+                
+            }
+            
+        }
+
+        .current {
+            @media #{$desktop} {
+                border-color: $black;            
+            }
+            
+            &:hover {
+                @media #{$desktop} {
+                    border-color: $white;    
+                }
+            }
+            
+        }
+        
+    }
+}
+
+
+
+
+div.content {
+    height: 75%;
+    width: 100%;
+    overflow: auto;
+    
+    @media #{$desktop} {
+        height: 78%;
+        top: 12%;
+    }
+    
+    
+    .subbar {
+        color: $black;
+        font-size: 400%;
+        text-align: center;
+        width: 50%;
+        margin: 0px auto 10% auto;
+        
+        @media #{$desktop} {
+            display: none;
+        }
+    }
+
+    .key {
+        color: $purple;
+        width: 30%;
+        text-align: center;
+        margin: 0px auto;
+        float: left;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+        > * {
+            
+            border-right: 2px solid $purple; 
+        }
+        
+    }
+
+    .value {
+        
+        width: 70%;
+        height: 100%;
+        float: left;
+        box-sizing: border-box;
+        padding: 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    
+    h1 {
+        font-size: 3em;
+        color: $purple;
+        margin: 15px 2%;
+    }
+    
+    p {
+        font-size: 2em;
+        color: $black;
+        margin: 0 1% 2% 5%; //TODO nodig?
+    }
+ 
+}
+
+footer {
+    position: fixed;
+    top: 85%;
+    width: 100%;
+    height: 15%;
+    background-color: $black;
+    
+    @media #{$desktop} {
+        height: 10%;    
+        top: 90%;
+    }
+    
+    .icons{
+        display: flex;
+        height: 100%;
+        a {
+            margin: auto;
+            i {
+                color: $white;
+                font-size: 4em;
+                &:hover {
+                    @media #{$desktop} {
+                        color: $purple;    
+                    }
+                }
+                @media #{$desktop}{
+                    //font-size: 1em;    
+                }
+            }
+        }
+           
+    }
+
+
+}

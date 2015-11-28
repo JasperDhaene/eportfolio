@@ -1,12 +1,12 @@
 .content#homepage {
     p {
-        font-size: 5em;
+        //font-size: 5em;
         color: $purple;
         text-align: center;
-        padding: 45% 10%;
+        //padding: 45% 10%;
         
         @media #{$desktop} {
-            padding: 15%;    
+            //padding: 15%;    
         }
 
     }
