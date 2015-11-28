@@ -36,6 +36,30 @@ $images: "../images/";
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Daniel';
+    src: url('../fonts/daniel.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blackout';
+    src: url('../fonts/Blackout-Midnight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BlackoutInverse';
+    src: url('../fonts/Blackout-2am.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Goodfoot';
+    src: url('../fonts/goodfoot.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
     height: 100%;
@@ -64,10 +88,10 @@ html {
                 }
 
                 h1 {
-                    font-size: 1.5em;
+                    //font-size: 1.5em;
                     width: 80%;
                     box-sizing: border-box;
-                    font-family: Allura;
+                    font-family: Goodfoot;
                     color: $gray;
                     padding-left: 10px;
                 }
@@ -83,7 +107,7 @@ html {
                         margin: 10px 40px 10px 40px;
                         border-bottom: 1px solid $white;
                         list-style: none;
-
+                        padding-left: 5px;
                         &:hover {
                             padding-left: 20px;    
                         }
@@ -122,6 +146,7 @@ html {
             color: $black;
             text-align: center;
             margin-top: 10%;
+            font-family: BlackoutInverse
         }
 
         footer {

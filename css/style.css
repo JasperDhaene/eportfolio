@@ -21,6 +21,26 @@
   src: url("../fonts/Allura-Regular.otf");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Daniel';
+  src: url("../fonts/daniel.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Blackout';
+  src: url("../fonts/Blackout-Midnight.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'BlackoutInverse';
+  src: url("../fonts/Blackout-2am.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Goodfoot';
+  src: url("../fonts/goodfoot.ttf");
+  font-weight: normal;
+  font-style: normal; }
 html {
   height: 100%; }
   html body {
@@ -40,10 +60,9 @@ html {
           color: #fff247;
           text-align: center; }
         html body header > div h1 {
-          font-size: 1.5em;
           width: 80%;
           box-sizing: border-box;
-          font-family: Allura;
+          font-family: Goodfoot;
           color: #e4e0e5;
           padding-left: 10px; }
       html body header > nav {
@@ -54,7 +73,8 @@ html {
             font-size: 2em;
             margin: 10px 40px 10px 40px;
             border-bottom: 1px solid #fff9ff;
-            list-style: none; }
+            list-style: none;
+            padding-left: 5px; }
             html body header > nav ul li:hover {
               padding-left: 20px; }
             html body header > nav ul li a {
@@ -72,7 +92,8 @@ html {
       font-size: 5em;
       color: #111111;
       text-align: center;
-      margin-top: 10%; }
+      margin-top: 10%;
+      font-family: BlackoutInverse; }
     html body footer {
       height: 10%; }
       html body footer > div {
