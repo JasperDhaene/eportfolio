@@ -136,20 +136,65 @@ html {
             }
         }
         
-        > div { //CONTENT SECTION
+        > div#homepage { //CONTENT SECTION HOMEPAGE | TODO: merge
             width: 100%;
             overflow: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 5em;
+            
             color: $black;
             text-align: center;
             margin-top: 10%;
-            font-family: BlackoutInverse
+            
+            
+            h1 {
+                font-size: 5em;
+                font-family: BlackoutInverse
+            }
+            
+            
+        }
+        
+        > div { //CONTENT SECTION
+            width: 100%;
+            overflow: auto;            
+            color: $black;
+            text-align: center;
+            padding-top: 5px;
+            font-family: 'Droid Sans', sans-serif;
+
+            
+            h1 {
+                font-size: 5em;
+                font-family: BlackoutInverse
+            }
+            
+            > div {
+                width: 100%;
+                
+                p{
+                    padding: 0 5%;
+                }
+                
+                //padding: 0 10px 0 10px;
+                
+                picture {
+                    //display: block;
+                    text-align: center;
+                    
+                    img {
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+            
+            
+            
+            
         }
 
-        footer {
+        footer#homepage { //TODO: merge
             height: 10%;
 
             > div { //ICONS
@@ -164,6 +209,29 @@ html {
                         color: $black;
                         &:hover {
                             color: $green;
+                        }
+                    }
+                }
+            }
+        }
+        
+        footer {
+            height: 10%;
+
+            > div { //ICONS
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 2em;
+                padding: 5px 0;
+                margin-top: 10%;
+                background-color: $green;
+                a {
+                    i, i:visited {
+                        color: $gray;
+                        &:hover {
+                            color: $yellow;
                         }
                     }
                 }

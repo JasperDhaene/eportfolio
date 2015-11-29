@@ -83,17 +83,49 @@ html {
                 color: #fff9ff; }
       html body header:hover nav {
         display: block; }
-    html body > div {
+    html body > div#homepage {
       width: 100%;
       overflow: auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 5em;
       color: #111111;
       text-align: center;
-      margin-top: 10%;
-      font-family: BlackoutInverse; }
+      margin-top: 10%; }
+      html body > div#homepage h1 {
+        font-size: 5em;
+        font-family: BlackoutInverse; }
+    html body > div {
+      width: 100%;
+      overflow: auto;
+      color: #111111;
+      text-align: center;
+      padding-top: 5px;
+      font-family: 'Droid Sans', sans-serif; }
+      html body > div h1 {
+        font-size: 5em;
+        font-family: BlackoutInverse; }
+      html body > div > div {
+        width: 100%; }
+        html body > div > div p {
+          padding: 0 5%; }
+        html body > div > div picture {
+          text-align: center; }
+          html body > div > div picture img {
+            margin-bottom: 5%; }
+    html body footer#homepage {
+      height: 10%; }
+      html body footer#homepage > div {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+        margin: 10% 0; }
+        html body footer#homepage > div a i, html body footer#homepage > div a i:visited {
+          color: #111111; }
+          html body footer#homepage > div a i:hover, html body footer#homepage > div a i:visited:hover {
+            color: #033; }
     html body footer {
       height: 10%; }
       html body footer > div {
@@ -102,10 +134,12 @@ html {
         justify-content: space-around;
         align-items: center;
         font-size: 2em;
-        margin: 10% 0; }
+        padding: 5px 0;
+        margin-top: 10%;
+        background-color: #033; }
         html body footer > div a i, html body footer > div a i:visited {
-          color: #111111; }
+          color: #e4e0e5; }
           html body footer > div a i:hover, html body footer > div a i:visited:hover {
-            color: #033; }
+            color: #fff247; }
 
 /*# sourceMappingURL=style.css.map */
