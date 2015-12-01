@@ -194,29 +194,13 @@ html {
             
         }
 
-        footer#homepage { //TODO: merge
-            height: 10%;
 
-            > div { //ICONS
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 2em;
-                margin: 10% 0;
-                a {
-                    i, i:visited {
-                        color: $black;
-                        &:hover {
-                            color: $green;
-                        }
-                    }
-                }
-            }
-        }
         
         footer {
             height: 10%;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
 
             > div { //ICONS
                 height: 100%;
@@ -232,6 +216,29 @@ html {
                         color: $gray;
                         &:hover {
                             color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+        
+        footer#homepage { //TODO: merge
+            height: 10%;
+            position: inherit;
+
+            > div { //ICONS
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 2em;
+                margin: 10% 0;
+                background-color: transparent;
+                a {
+                    i, i:visited {
+                        color: $black;
+                        &:hover {
+                            color: $green;
                         }
                     }
                 }

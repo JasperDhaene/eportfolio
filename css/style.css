@@ -113,21 +113,11 @@ html {
           text-align: center; }
           html body > div > div picture img {
             margin-bottom: 5%; }
-    html body footer#homepage {
-      height: 10%; }
-      html body footer#homepage > div {
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 2em;
-        margin: 10% 0; }
-        html body footer#homepage > div a i, html body footer#homepage > div a i:visited {
-          color: #111111; }
-          html body footer#homepage > div a i:hover, html body footer#homepage > div a i:visited:hover {
-            color: #033; }
     html body footer {
-      height: 10%; }
+      height: 10%;
+      position: absolute;
+      bottom: 10%;
+      width: 100%; }
       html body footer > div {
         height: 100%;
         display: flex;
@@ -141,5 +131,20 @@ html {
           color: #e4e0e5; }
           html body footer > div a i:hover, html body footer > div a i:visited:hover {
             color: #fff247; }
+    html body footer#homepage {
+      height: 10%;
+      position: inherit; }
+      html body footer#homepage > div {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+        margin: 10% 0;
+        background-color: transparent; }
+        html body footer#homepage > div a i, html body footer#homepage > div a i:visited {
+          color: #111111; }
+          html body footer#homepage > div a i:hover, html body footer#homepage > div a i:visited:hover {
+            color: #033; }
 
 /*# sourceMappingURL=style.css.map */
