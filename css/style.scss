@@ -11,7 +11,9 @@ $gmail-red: #CC181E;
 $font: Helvetica,Arial,sans-serif;
 
 $tablet: "(min-width: 481px) and (max-width: 768px)";
-$desktop: "(min-width: 769px)";
+$laptop: "(min-width: 768px) and (max-width: 1280px)";
+
+$desktop: "(min-width: 1280px)";
 
 $images: "../images/";
 
@@ -126,8 +128,13 @@ html {
                 font-size: 2em;
                 padding: 10px;
                 
-                @media #{$desktop} {
-                    width: 20%;
+                @media #{$desktop}, #{$laptop} {
+                    width: 30%;
+                    box-sizing: border-box;
+                    float: left;
+                }
+                @media #{$desktop}, #{$laptop} {
+                    //width: 40%;
                     box-sizing: border-box;
                     float: left;
                 }
@@ -143,13 +150,17 @@ html {
                         display: none;
                         visibility: hidden;
                     }
+                    @media #{$laptop} {
+                        display: none;
+                        visibility: hidden;
+                    }
                 }
 
                 h1 {
-                    //font-size: 1.5em;
-                    @media #{$desktop} {
-                        //width: 50%;
+                    @media #{$desktop}, #{$laptop} {
+                        width: 100%;
                     }
+    
                     width: 80%;
                     box-sizing: border-box;
                     font-family: 'Droid Sans';
@@ -163,7 +174,7 @@ html {
 
             > nav { 
                 display: none;
-                @media #{$desktop} {
+                @media #{$desktop},#{$laptop} {
                     display: block;
                     width: 50%;
                     float: right;
@@ -173,15 +184,18 @@ html {
                     padding-right: 20px;
 
                 }
+                @media #{$laptop} {
+                    width: 70%;
+                }
                 ul {
                     padding: 10px 0;
-                    @media #{$desktop} {
+                    @media #{$desktop},#{$laptop} {
                         width: 100%;
                         box-sizing: border-box;
                         font-size: 50%;
                     }
                     li {
-                        @media #{$desktop} {
+                        @media #{$desktop},#{$laptop} {
                             display: inline;
                             margin: 20px;
                         }
@@ -232,6 +246,9 @@ html {
             
             
             h1 {
+                @media #{$desktop},#{$laptop} {
+                    display: block;  
+                }
                 font-size: 5em;
                 font-family: BlackoutInverse;
             }
@@ -242,16 +259,21 @@ html {
         > div { //CONTENT SECTION
             width: 100%;
             overflow: auto;            
-            color: $black;
+            color: $white;
             text-align: center;
             padding-top: 5px;
             height: 100%;
 
             
             h1 {
+                @media #{$desktop},#{$laptop} {
+                    display: none;  
+                }
                 font-size: 5em;
                 font-family: BlackoutInverse
             }
+
+        
             
             > div { //SUB-CONTENT SECTION
                 width: 100%;
@@ -264,13 +286,21 @@ html {
                     text-align: center;
                     
                     img {
+                        border: 5px solid #FFF;
+                        box-shadow: 0px 0px 5px #CCC;
                         margin-bottom: 5%;
+                        border-radius: 50%;
+                        
                     }
                 }
             }
             
             form {
                 padding: 0 10%;
+                @media #{$desktop} {
+                    padding: 10% 30%;
+                }
+                
                 
                 input[type=submit] {
                     display: block;
@@ -284,23 +314,25 @@ html {
                     border: 2px solid $black;
                     border-radius: 10px;
                     text-align: center;
-                    width: 100%;
+                    width: 50%;
                 }
                 input[type=text], input[type=email] {
                     @extend input[type=submit];
 
-                    margin: 5px auto 15px auto;
+                    margin: 10px auto 30px auto;
                     text-align: left;
                     font-weight: normal;
                     color: black;
-                    background-color: $white;
+                    background-color: transparent;
                     border-radius: 0;
                     border-width: 0 0 1px 0; 
+                    border-bottom-color: $white;
+                    width: 100%;
                 }
 
                 textarea{
                     @extend input[type=text];
-                    height: 400%;
+                    height: 800%;
                 }
 
 
@@ -311,7 +343,7 @@ html {
                 }
                 
                 input[type=submit]:hover {
-                    background: $white;
+                    background: transparent;
                     color: $purple;
                 }
             }
@@ -327,7 +359,7 @@ html {
             > h2 {
                 font-size: 150%;
                 text-align: center;
-                color: $purple;
+                color: $white;
                 margin-bottom: 30px;
             }
             
@@ -335,19 +367,19 @@ html {
 
 
         
-        /*footer {
+        footer {
             height: 2em;
             position: absolute;
             bottom: 0;
             width: 100%;
 
-            //display: flex;
-            //justify-content: space-around;
-            //align-items: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             font-size: 2em;
             padding: 5px 0;
             margin-top: 10%;
-            background-color: $green;
+            background-color: transparent;
             a {
                 i, i:visited {
                     color: $gray;
@@ -357,7 +389,7 @@ html {
                 }
             }
             
-        }*/
+        }
         
         footer#homepage { //TODO: merge
             height: 10%;
@@ -366,17 +398,17 @@ html {
             width: 100%;
             box-sizing: border-box;
             font-size: 2em;
-            margin: 10% auto;
+            margin: 0 auto;
             a {
                 display: block;
                 box-sizing: border-box;
-                border: 3px solid $green;
+                border: 3px solid $white;
                 border-radius: 20px;
                 padding: 5px;
-                margin: 10px auto;
+                margin: 10px 10%;
                 width: 70%;
                 text-align: center;
-                color: $green;
+                color: $white;
 
                 &:nth-child(1):hover {
                     border-color: $facebook-blue;

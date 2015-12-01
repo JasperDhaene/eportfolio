@@ -71,31 +71,8 @@ html {
     padding: 0;
     background-image: url(../images/background_small.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-        /*footer {
-            height: 2em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-
-            //display: flex;
-            //justify-content: space-around;
-            //align-items: center;
-            font-size: 2em;
-            padding: 5px 0;
-            margin-top: 10%;
-            background-color: $green;
-            a {
-                i, i:visited {
-                    color: $gray;
-                    &:hover {
-                        color: $yellow;
-                    }
-                }
-            }
-            
-        }*/ }
-    @media (min-width: 769px) {
+    background-size: cover; }
+    @media (min-width: 1280px) {
       html body {
         background-image: url(../images/background9.jpg); } }
     html body a {
@@ -107,9 +84,13 @@ html {
       html body header > div {
         font-size: 2em;
         padding: 10px; }
-        @media (min-width: 769px) {
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body header > div {
-            width: 20%;
+            width: 30%;
+            box-sizing: border-box;
+            float: left; } }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header > div {
             box-sizing: border-box;
             float: left; } }
         html body header > div i {
@@ -118,7 +99,11 @@ html {
           color: #fff9ff;
           text-align: center;
           display: block; }
-          @media (min-width: 769px) {
+          @media (min-width: 1280px) {
+            html body header > div i {
+              display: none;
+              visibility: hidden; } }
+          @media (min-width: 768px) and (max-width: 1280px) {
             html body header > div i {
               display: none;
               visibility: hidden; } }
@@ -129,9 +114,12 @@ html {
           letter-spacing: 2px;
           color: #fff9ff;
           padding-left: 10px; }
+          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+            html body header > div h1 {
+              width: 100%; } }
       html body header > nav {
         display: none; }
-        @media (min-width: 769px) {
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body header > nav {
             display: block;
             width: 50%;
@@ -140,9 +128,12 @@ html {
             font-size: 1em;
             text-align: right;
             padding-right: 20px; } }
+        @media (min-width: 768px) and (max-width: 1280px) {
+          html body header > nav {
+            width: 70%; } }
         html body header > nav ul {
           padding: 10px 0; }
-          @media (min-width: 769px) {
+          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body header > nav ul {
               width: 100%;
               box-sizing: border-box;
@@ -152,11 +143,11 @@ html {
             margin: 10px 40px 10px 40px;
             list-style: none;
             padding-left: 5px; }
-            @media (min-width: 769px) {
+            @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
               html body header > nav ul li {
                 display: inline;
                 margin: 20px; } }
-            @media (min-width: 769px) {
+            @media (min-width: 1280px) {
               html body header > nav ul li:hover {
                 border-bottom: 1px solid #fff9ff; } }
             html body header > nav ul li a {
@@ -176,16 +167,22 @@ html {
       html body > div#homepage h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body > div#homepage h1 {
+            display: block; } }
     html body > div {
       width: 100%;
       overflow: auto;
-      color: #111111;
+      color: #fff9ff;
       text-align: center;
       padding-top: 5px;
       height: 100%; }
       html body > div h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body > div h1 {
+            display: none; } }
       html body > div > div {
         width: 100%; }
         html body > div > div p {
@@ -193,9 +190,15 @@ html {
         html body > div > div picture {
           text-align: center; }
           html body > div > div picture img {
-            margin-bottom: 5%; }
+            border: 5px solid #FFF;
+            box-shadow: 0px 0px 5px #CCC;
+            margin-bottom: 5%;
+            border-radius: 50%; }
       html body > div form {
         padding: 0 10%; }
+        @media (min-width: 1280px) {
+          html body > div form {
+            padding: 10% 30%; } }
         html body > div form input[type=submit], html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
           display: block;
           font-size: 2em;
@@ -208,23 +211,25 @@ html {
           border: 2px solid #111111;
           border-radius: 10px;
           text-align: center;
-          width: 100%; }
+          width: 50%; }
         html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
-          margin: 5px auto 15px auto;
+          margin: 10px auto 30px auto;
           text-align: left;
           font-weight: normal;
           color: black;
-          background-color: #fff9ff;
+          background-color: transparent;
           border-radius: 0;
-          border-width: 0 0 1px 0; }
+          border-width: 0 0 1px 0;
+          border-bottom-color: #fff9ff;
+          width: 100%; }
         html body > div form textarea {
-          height: 400%; }
+          height: 800%; }
         html body > div form input:focus, html body > div form textarea:focus {
           outline: 0;
           border-bottom-color: #392a6d;
           border-bottom-width: 2px; }
         html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
-          background: #fff9ff;
+          background: transparent;
           color: #392a6d; }
       html body > div .project {
         text-align: center; }
@@ -234,8 +239,24 @@ html {
       html body > div > h2 {
         font-size: 150%;
         text-align: center;
-        color: #392a6d;
+        color: #fff9ff;
         margin-bottom: 30px; }
+    html body footer {
+      height: 2em;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 2em;
+      padding: 5px 0;
+      margin-top: 10%;
+      background-color: transparent; }
+      html body footer a i, html body footer a i:visited {
+        color: #e4e0e5; }
+        html body footer a i:hover, html body footer a i:visited:hover {
+          color: #fff9ff; }
     html body footer#homepage {
       height: 10%;
       position: inherit;
@@ -243,17 +264,17 @@ html {
       width: 100%;
       box-sizing: border-box;
       font-size: 2em;
-      margin: 10% auto; }
+      margin: 0 auto; }
       html body footer#homepage a {
         display: block;
         box-sizing: border-box;
-        border: 3px solid #033;
+        border: 3px solid #fff9ff;
         border-radius: 20px;
         padding: 5px;
-        margin: 10px auto;
+        margin: 10px 10%;
         width: 70%;
         text-align: center;
-        color: #033; }
+        color: #fff9ff; }
         html body footer#homepage a:nth-child(1):hover {
           border-color: #3B5998;
           color: #3B5998; }
