@@ -45,7 +45,33 @@ html {
   height: 100%; }
   html body {
     height: 100%;
-    background-color: #fff9ff; }
+    background-color: #fff9ff;
+    font-family: 'Nunito','Droid Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+        /*footer {
+            height: 2em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            //display: flex;
+            //justify-content: space-around;
+            //align-items: center;
+            font-size: 2em;
+            padding: 5px 0;
+            margin-top: 10%;
+            background-color: $green;
+            a {
+                i, i:visited {
+                    color: $gray;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+            
+        }*/ }
     html body a {
       text-decoration: none; }
     html body header {
@@ -90,8 +116,7 @@ html {
       justify-content: center;
       align-items: center;
       color: #111111;
-      text-align: center;
-      margin-top: 10%; }
+      text-align: center; }
       html body > div#homepage h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
@@ -101,7 +126,7 @@ html {
       color: #111111;
       text-align: center;
       padding-top: 5px;
-      font-family: 'Droid Sans', sans-serif; }
+      height: 100%; }
       html body > div h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
@@ -145,38 +170,42 @@ html {
         html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
           background: #fff9ff;
           color: #392a6d; }
-    html body footer {
-      height: 10%;
-      position: absolute;
-      bottom: 10%;
-      width: 100%; }
-      html body footer > div {
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 2em;
-        padding: 5px 0;
-        margin-top: 10%;
-        background-color: #033; }
-        html body footer > div a i, html body footer > div a i:visited {
-          color: #e4e0e5; }
-          html body footer > div a i:hover, html body footer > div a i:visited:hover {
-            color: #fff247; }
+      html body > div .project {
+        text-align: center; }
+        html body > div .project h3 {
+          font-size: 80%;
+          margin: 10px 0; }
+      html body > div > h2 {
+        font-size: 150%;
+        text-align: center;
+        color: #392a6d;
+        margin-bottom: 30px; }
     html body footer#homepage {
       height: 10%;
-      position: inherit; }
-      html body footer#homepage > div {
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 2em;
-        margin: 10% 0;
-        background-color: transparent; }
-        html body footer#homepage > div a i, html body footer#homepage > div a i:visited {
+      position: inherit;
+      padding: 0 5%;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 2em;
+      margin: 10% auto; }
+      html body footer#homepage a {
+        display: block;
+        box-sizing: border-box;
+        border: 3px solid #033;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 10px auto;
+        width: 70%;
+        text-align: center;
+        color: #033; }
+        html body footer#homepage a:nth-child(1):hover {
+          border-color: #3B5998;
+          color: #3B5998; }
+        html body footer#homepage a:nth-child(2):hover {
+          border-color: #111111;
           color: #111111; }
-          html body footer#homepage > div a i:hover, html body footer#homepage > div a i:visited:hover {
-            color: #033; }
+        html body footer#homepage a:nth-child(3):hover {
+          border-color: #CC181E;
+          color: #CC181E; }
 
 /*# sourceMappingURL=style.css.map */

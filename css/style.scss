@@ -5,6 +5,8 @@ $gray: #e4e0e5;
 $purple: #392a6d;
 $green: #033;
 $yellow: #fff247;
+$facebook-blue:  #3B5998;
+$gmail-red: #CC181E;
 
 $font: Helvetica,Arial,sans-serif;
 
@@ -67,6 +69,10 @@ html {
     body {
         height: 100%;
         background-color: $white;
+        font-family: 'Nunito','Droid Sans', sans-serif; //TODO: decide what to do with font
+        margin: 0;
+        padding: 0;
+        
         
         a { //TODO find other place
             text-decoration: none;
@@ -146,7 +152,7 @@ html {
             
             color: $black;
             text-align: center;
-            margin-top: 10%;
+            //margin-top: 10%;
             
             
             h1 {
@@ -163,7 +169,7 @@ html {
             color: $black;
             text-align: center;
             padding-top: 5px;
-            font-family: 'Droid Sans', sans-serif;
+            height: 100%;
 
             
             h1 {
@@ -177,11 +183,8 @@ html {
                 p{
                     padding: 0 5%;
                 }
-                
-                //padding: 0 10px 0 10px;
-                
+                                
                 picture {
-                    //display: block;
                     text-align: center;
                     
                     img {
@@ -237,58 +240,84 @@ html {
                 }
             }
             
+            .project {
+                text-align: center;
+                h3 {
+                    font-size: 80%;
+                    margin: 10px 0;
+                }
+            }
+            
+            > h2 {
+                font-size: 150%;
+                text-align: center;
+                color: $purple;
+                margin-bottom: 30px;
+            }
+            
         }
 
 
         
-        footer {
-            height: 10%;
+        /*footer {
+            height: 2em;
             position: absolute;
-            bottom: 10%;
+            bottom: 0;
             width: 100%;
 
-            > div { //ICONS
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 2em;
-                padding: 5px 0;
-                margin-top: 10%;
-                background-color: $green;
-                a {
-                    i, i:visited {
-                        color: $gray;
-                        &:hover {
-                            color: $yellow;
-                        }
+            //display: flex;
+            //justify-content: space-around;
+            //align-items: center;
+            font-size: 2em;
+            padding: 5px 0;
+            margin-top: 10%;
+            background-color: $green;
+            a {
+                i, i:visited {
+                    color: $gray;
+                    &:hover {
+                        color: $yellow;
                     }
                 }
             }
-        }
+            
+        }*/
         
         footer#homepage { //TODO: merge
             height: 10%;
             position: inherit;
+            padding: 0 5%;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 2em;
+            margin: 10% auto;
+            a {
+                display: block;
+                box-sizing: border-box;
+                border: 3px solid $green;
+                border-radius: 20px;
+                padding: 5px;
+                margin: 10px auto;
+                width: 70%;
+                text-align: center;
+                color: $green;
 
-            > div { //ICONS
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 2em;
-                margin: 10% 0;
-                background-color: transparent;
-                a {
-                    i, i:visited {
-                        color: $black;
-                        &:hover {
-                            color: $green;
-                        }
-                    }
+                &:nth-child(1):hover {
+                    border-color: $facebook-blue;
+                    color: $facebook-blue;
+                }
+                &:nth-child(2):hover {
+                    border-color: $black;
+                    color: $black;
+                }
+                &:nth-child(3):hover {
+                    border-color: $gmail-red;
+                    color: $gmail-red;
                 }
             }
         }
+            
+        
     }
 }
 
