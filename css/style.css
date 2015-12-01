@@ -70,7 +70,7 @@ html {
         html body header > nav ul {
           padding: 10px 0; }
           html body header > nav ul li {
-            font-size: 2em;
+            font-size: 1.5em;
             margin: 10px 40px 10px 40px;
             border-bottom: 1px solid #fff9ff;
             list-style: none;
@@ -81,7 +81,7 @@ html {
               color: #fff9ff; }
               html body header > nav ul li a:visited {
                 color: #fff9ff; }
-      html body header:hover nav {
+      html body header:hover nav, html body header:focus nav {
         display: block; }
     html body > div#homepage {
       width: 100%;
@@ -113,6 +113,38 @@ html {
           text-align: center; }
           html body > div > div picture img {
             margin-bottom: 5%; }
+      html body > div form {
+        padding: 0 10%; }
+        html body > div form input[type=submit], html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+          display: block;
+          font-size: 2em;
+          padding: 5px;
+          margin: 25px auto 5px auto;
+          box-sizing: border-box;
+          font-weight: bold;
+          background: #392a6d;
+          color: #fff9ff;
+          border: 2px solid #111111;
+          border-radius: 10px;
+          text-align: center;
+          width: 100%; }
+        html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+          margin: 5px auto 15px auto;
+          text-align: left;
+          font-weight: normal;
+          color: black;
+          background-color: #fff9ff;
+          border-radius: 0;
+          border-width: 0 0 1px 0; }
+        html body > div form textarea {
+          height: 400%; }
+        html body > div form input:focus, html body > div form textarea:focus {
+          outline: 0;
+          border-bottom-color: #392a6d;
+          border-bottom-width: 2px; }
+        html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+          background: #fff9ff;
+          color: #392a6d; }
     html body footer {
       height: 10%;
       position: absolute;
