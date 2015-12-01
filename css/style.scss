@@ -4,7 +4,7 @@ $white: #fff9ff;
 $gray: #e4e0e5;
 $purple: #392a6d;
 $green: #033;
-$yellow: #fff247;
+$yellow: #fff9ff;//fff247
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
 
@@ -62,6 +62,33 @@ $images: "../images/";
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Blokletters-Balpen';
+    src: url('../fonts/Blokletters-Balpen.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hetilica';
+    src: url('../fonts/hetilica.ttf');
+    font-weight: normal;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'WC';
+    src: url('../fonts/WCManoNegraBta.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scratch';
+    src: url('../fonts/Scratch.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 html {
     height: 100%;
@@ -73,6 +100,14 @@ html {
         margin: 0;
         padding: 0;
         
+        background-image: url(../images/background_small.jpg);
+        @media #{$desktop} {
+            background-image: url(../images/background9.jpg);
+        }
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        
         
         a { //TODO find other place
             text-decoration: none;
@@ -80,25 +115,47 @@ html {
         
         header {
             width: 100%;
-            background-color: $green;
-
+            
+            
+            //background-color: $green;
+            //background-color: rgba(255, 255, 255, 0);
+            //background-image: url(../images/background3.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
             > div { //topbar section
                 font-size: 2em;
                 padding: 10px;
+                
+                @media #{$desktop} {
+                    width: 20%;
+                    box-sizing: border-box;
+                    float: left;
+                }
+                
                 i {
                     //width: 10%;
                     box-sizing: border-box;
                     float: right;
                     color: $yellow;
                     text-align: center;
+                    display: block;
+                    @media #{$desktop} {
+                        display: none;
+                        visibility: hidden;
+                    }
                 }
 
                 h1 {
                     //font-size: 1.5em;
+                    @media #{$desktop} {
+                        //width: 50%;
+                    }
                     width: 80%;
                     box-sizing: border-box;
-                    font-family: Goodfoot;
-                    color: $gray;
+                    font-family: 'Droid Sans';
+                    letter-spacing: 2px;
+                    //Quicksand Goodfoot Libre Baskerville WC
+                    color: $white;
                     padding-left: 10px;
                 }
             }
@@ -106,16 +163,36 @@ html {
 
             > nav { 
                 display: none;
+                @media #{$desktop} {
+                    display: block;
+                    width: 50%;
+                    float: right;
+                    box-sizing: border-box;
+                    font-size: 1em;
+                    text-align: right;
+                    padding-right: 20px;
+
+                }
                 ul {
                     padding: 10px 0;
+                    @media #{$desktop} {
+                        width: 100%;
+                        box-sizing: border-box;
+                        font-size: 50%;
+                    }
                     li {
+                        @media #{$desktop} {
+                            display: inline;
+                            margin: 20px;
+                        }
                         font-size: 1.5em;
                         margin: 10px 40px 10px 40px;
-                        border-bottom: 1px solid $white;
                         list-style: none;
                         padding-left: 5px;
                         &:hover {
-                            padding-left: 20px;    
+                            @media #{$desktop} {
+                                border-bottom: 1px solid $white;    
+                            }
                         }
 
                         a {
@@ -149,15 +226,14 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            color: $black;
+            color: $white;
             text-align: center;
             //margin-top: 10%;
             
             
             h1 {
                 font-size: 5em;
-                font-family: BlackoutInverse
+                font-family: BlackoutInverse;
             }
             
             

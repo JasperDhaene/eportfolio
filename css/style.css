@@ -41,6 +41,26 @@
   src: url("../fonts/goodfoot.ttf");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Blokletters-Balpen';
+  src: url("../fonts/Blokletters-Balpen.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Hetilica';
+  src: url("../fonts/hetilica.ttf");
+  font-weight: normal;
+  font-style: bold; }
+@font-face {
+  font-family: 'WC';
+  src: url("../fonts/WCManoNegraBta.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Scratch';
+  src: url("../fonts/Scratch.ttf");
+  font-weight: normal;
+  font-style: normal; }
 html {
   height: 100%; }
   html body {
@@ -49,6 +69,9 @@ html {
     font-family: 'Nunito','Droid Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(../images/background_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
         /*footer {
             height: 2em;
             position: absolute;
@@ -72,37 +95,70 @@ html {
             }
             
         }*/ }
+    @media (min-width: 769px) {
+      html body {
+        background-image: url(../images/background9.jpg); } }
     html body a {
       text-decoration: none; }
     html body header {
       width: 100%;
-      background-color: #033; }
+      background-repeat: no-repeat;
+      background-size: cover; }
       html body header > div {
         font-size: 2em;
         padding: 10px; }
+        @media (min-width: 769px) {
+          html body header > div {
+            width: 20%;
+            box-sizing: border-box;
+            float: left; } }
         html body header > div i {
           box-sizing: border-box;
           float: right;
-          color: #fff247;
-          text-align: center; }
+          color: #fff9ff;
+          text-align: center;
+          display: block; }
+          @media (min-width: 769px) {
+            html body header > div i {
+              display: none;
+              visibility: hidden; } }
         html body header > div h1 {
           width: 80%;
           box-sizing: border-box;
-          font-family: Goodfoot;
-          color: #e4e0e5;
+          font-family: 'Droid Sans';
+          letter-spacing: 2px;
+          color: #fff9ff;
           padding-left: 10px; }
       html body header > nav {
         display: none; }
+        @media (min-width: 769px) {
+          html body header > nav {
+            display: block;
+            width: 50%;
+            float: right;
+            box-sizing: border-box;
+            font-size: 1em;
+            text-align: right;
+            padding-right: 20px; } }
         html body header > nav ul {
           padding: 10px 0; }
+          @media (min-width: 769px) {
+            html body header > nav ul {
+              width: 100%;
+              box-sizing: border-box;
+              font-size: 50%; } }
           html body header > nav ul li {
             font-size: 1.5em;
             margin: 10px 40px 10px 40px;
-            border-bottom: 1px solid #fff9ff;
             list-style: none;
             padding-left: 5px; }
-            html body header > nav ul li:hover {
-              padding-left: 20px; }
+            @media (min-width: 769px) {
+              html body header > nav ul li {
+                display: inline;
+                margin: 20px; } }
+            @media (min-width: 769px) {
+              html body header > nav ul li:hover {
+                border-bottom: 1px solid #fff9ff; } }
             html body header > nav ul li a {
               color: #fff9ff; }
               html body header > nav ul li a:visited {
@@ -115,7 +171,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #111111;
+      color: #fff9ff;
       text-align: center; }
       html body > div#homepage h1 {
         font-size: 5em;
