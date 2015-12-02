@@ -81,49 +81,10 @@ html {
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover; }
-      html body header > div {
-        font-size: 2em;
-        padding: 10px; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body header > div {
-            width: 30%;
-            box-sizing: border-box;
-            float: left; } }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body header > div {
-            box-sizing: border-box;
-            float: left; } }
-        html body header > div i {
-          box-sizing: border-box;
-          float: right;
-          color: #fff9ff;
-          text-align: center;
-          display: block; }
-          @media (min-width: 1280px) {
-            html body header > div i {
-              display: none;
-              visibility: hidden; } }
-          @media (min-width: 768px) and (max-width: 1280px) {
-            html body header > div i {
-              display: none;
-              visibility: hidden; } }
-        html body header > div h1 {
-          width: 80%;
-          box-sizing: border-box;
-          font-family: 'Droid Sans';
-          letter-spacing: 2px;
-          color: #fff9ff;
-          padding-left: 10px; }
-          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-            html body header > div h1 {
-              width: 100%; } }
       html body header > nav {
-        display: none; }
+        background-color: rgba(255, 255, 255, 0.1); }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body header > nav {
-            display: block;
-            width: 50%;
-            float: right;
             box-sizing: border-box;
             font-size: 1em;
             text-align: right;
@@ -138,11 +99,45 @@ html {
               width: 100%;
               box-sizing: border-box;
               font-size: 50%; } }
+          html body header > nav ul li:first-child {
+            display: block;
+            font-size: 3em;
+            margin-left: 15px; }
+            @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+              html body header > nav ul li:first-child {
+                display: inline;
+                width: 60%;
+                margin: 0 10px; } }
+            html body header > nav ul li:first-child i {
+              display: inline-block;
+              width: 20%;
+              box-sizing: border-box;
+              color: #fff247;
+              text-align: center; }
+              @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+                html body header > nav ul li:first-child i {
+                  display: none;
+                  visibility: hidden; } }
+            html body header > nav ul li:first-child h1 {
+              display: inline-block;
+              text-align: left;
+              width: 70%;
+              box-sizing: border-box;
+              font-family: 'Droid Sans';
+              letter-spacing: 2px;
+              color: #fff9ff;
+              padding-left: 10px; }
+              @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+                html body header > nav ul li:first-child h1 {
+                  width: 100%; } }
+            @media (min-width: 1280px) {
+              html body header > nav ul li:first-child:hover {
+                border-bottom: 0; } }
           html body header > nav ul li {
+            display: none;
             font-size: 1.5em;
-            margin: 10px 40px 10px 40px;
-            list-style: none;
-            padding-left: 5px; }
+            margin: 10px 0 10px 40px;
+            list-style: none; }
             @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
               html body header > nav ul li {
                 display: inline;
@@ -154,8 +149,11 @@ html {
               color: #fff9ff; }
               html body header > nav ul li a:visited {
                 color: #fff9ff; }
-      html body header:hover nav, html body header:focus nav {
+      html body header:hover nav li, html body header:focus nav li {
         display: block; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header:hover nav li, html body header:focus nav li {
+            display: inline; } }
     html body > div#homepage {
       width: 100%;
       overflow: auto;
@@ -256,7 +254,7 @@ html {
       html body footer a i, html body footer a i:visited {
         color: #e4e0e5; }
         html body footer a i:hover, html body footer a i:visited:hover {
-          color: #fff9ff; }
+          color: #fff247; }
     html body footer#homepage {
       height: 10%;
       position: inherit;

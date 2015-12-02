@@ -4,7 +4,7 @@ $white: #fff9ff;
 $gray: #e4e0e5;
 $purple: #392a6d;
 $green: #033;
-$yellow: #fff9ff;//fff247
+$yellow: #fff247;// //fff9ff
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
 
@@ -118,66 +118,17 @@ html {
         header {
             width: 100%;
             
-            
             //background-color: $green;
             //background-color: rgba(255, 255, 255, 0);
             //background-image: url(../images/background3.jpg);
             background-repeat: no-repeat;
             background-size:cover;
-            > div { //topbar section
-                font-size: 2em;
-                padding: 10px;
-                
-                @media #{$desktop}, #{$laptop} {
-                    width: 30%;
-                    box-sizing: border-box;
-                    float: left;
-                }
-                @media #{$desktop}, #{$laptop} {
-                    //width: 40%;
-                    box-sizing: border-box;
-                    float: left;
-                }
-                
-                i {
-                    //width: 10%;
-                    box-sizing: border-box;
-                    float: right;
-                    color: $yellow;
-                    text-align: center;
-                    display: block;
-                    @media #{$desktop} {
-                        display: none;
-                        visibility: hidden;
-                    }
-                    @media #{$laptop} {
-                        display: none;
-                        visibility: hidden;
-                    }
-                }
-
-                h1 {
-                    @media #{$desktop}, #{$laptop} {
-                        width: 100%;
-                    }
-    
-                    width: 80%;
-                    box-sizing: border-box;
-                    font-family: 'Droid Sans';
-                    letter-spacing: 2px;
-                    //Quicksand Goodfoot Libre Baskerville WC
-                    color: $white;
-                    padding-left: 10px;
-                }
-            }
-
 
             > nav { 
-                display: none;
+                //border-bottom: 1px solid $white;
+                background-color: rgba(255,255,255,0.1);
                 @media #{$desktop},#{$laptop} {
-                    display: block;
-                    width: 50%;
-                    float: right;
+                    //float: right;
                     box-sizing: border-box;
                     font-size: 1em;
                     text-align: right;
@@ -194,15 +145,65 @@ html {
                         box-sizing: border-box;
                         font-size: 50%;
                     }
+                    li:first-child {
+                        display: block;
+                        font-size: 3em;
+                        margin-left: 15px;
+                        @media #{$desktop},#{$laptop} {
+                            display: inline;
+                            width: 60%;
+                            margin: 0 10px;
+                        }
+    
+                        i {
+                            display: inline-block;
+                            width: 20%;
+                            box-sizing: border-box;
+                            color: $yellow;
+                            text-align: center;
+                            @media #{$desktop}, #{$laptop} {
+                                display: none;
+                                visibility: hidden;
+                            }
+                        }
+
+                        h1 {
+                            display: inline-block;
+                            text-align: left;
+                            
+                            width: 70%;
+                            box-sizing: border-box;
+                            font-family: 'Droid Sans';
+                            letter-spacing: 2px;
+                            //Quicksand Goodfoot Libre Baskerville WC
+                            color: $white;
+                            padding-left: 10px;
+                            
+                            @media #{$desktop}, #{$laptop} {
+                                width: 100%;
+                                //width: 20%;
+                            }
+                        }
+
+                        &:hover {
+                            
+                            @media #{$desktop} {
+                                border-bottom: 0;    
+                            }
+                        }
+                    }
+
+
                     li {
+                        display: none;
                         @media #{$desktop},#{$laptop} {
                             display: inline;
                             margin: 20px;
                         }
                         font-size: 1.5em;
-                        margin: 10px 40px 10px 40px;
+                        margin: 10px 0 10px 40px;
                         list-style: none;
-                        padding-left: 5px;
+                        //margin-left: 40px;
                         &:hover {
                             @media #{$desktop} {
                                 border-bottom: 1px solid $white;    
@@ -212,9 +213,6 @@ html {
                         a {
 
                             color: $white;
-
-
-
 
                             &:visited {
                                 color: $white;
@@ -227,8 +225,11 @@ html {
             //ANIMATION
 
             &:hover, &:focus {
-                nav {
+                nav li {
                     display: block;
+                    @media #{$desktop},#{$laptop} {
+                            display: inline;
+                    }
                 }
             }
             
