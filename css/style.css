@@ -250,38 +250,34 @@ html {
         text-align: center;
         color: #392a6d;
         margin-bottom: 30px; }
-      html body > div ul li {
-        margin: 5%;
-        height: 100%; }
-        html body > div ul li h1 {
-          text-align: left;
-          margin-left: 40%;
-          display: block;
-          font-size: 3em; }
-        html body > div ul li div {
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
+      html body > div ul {
+        list-style: none; }
+        html body > div ul li {
+          display: flex;
+          margin: 5%;
           height: 100%; }
-          html body > div ul li div p {
+          html body > div ul li div {
+            display: flex;
+            flex: 2;
+            flex-direction: column;
             justify-content: center;
-            align-items: center; }
-        html body > div ul li p {
-          display: inline-flex;
-          justify-content: center;
-          align-content: center;
-          align-items: center;
-          width: 50%;
-          height: 50%; }
-        html body > div ul li picture {
-          width: 30%;
-          display: inline-block;
-          height: 100%; }
-          html body > div ul li picture img {
-            border: 5px solid #FFF;
-            box-shadow: 0px 0px 5px #CCC;
-            margin-bottom: 5%;
-            border-radius: 50%; }
+            align-items: center;
+            height: 100%; }
+            html body > div ul li div h1 {
+              flex: 1;
+              text-align: left;
+              font-size: 3em; }
+            html body > div ul li div p {
+              flex: 2; }
+          html body > div ul li picture {
+            flex: 1;
+            width: 30%;
+            height: 100%; }
+            html body > div ul li picture img {
+              border: 5px solid #FFF;
+              box-shadow: 0px 0px 5px #CCC;
+              margin-bottom: 5%;
+              border-radius: 50%; }
     html body footer {
       height: 2em;
       position: absolute;
