@@ -1,0 +1,72 @@
+html {
+    body {
+        header {
+            //see _header.scss
+        }
+        
+        > div { //CONTENT SECTION
+
+        }
+
+
+        footer {
+            height: 2em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2em;
+            padding: 5px 0;
+            margin-top: 10%;
+            background-color: transparent;
+            a {
+                i, i:visited {
+                    color: $gray;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+            
+        }
+        
+        footer#homepage { //TODO: merge
+            height: 10%;
+            position: inherit;
+            padding: 0 5%;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 2em;
+            margin: 0 auto;
+            a {
+                display: block;
+                box-sizing: border-box;
+                border: 3px solid $white;
+                border-radius: 20px;
+                padding: 5px;
+                margin: 10px 10%;
+                width: 70%;
+                text-align: center;
+                color: $white;
+
+                &:nth-child(1):hover {
+                    border-color: $facebook-blue;
+                    color: $facebook-blue;
+                }
+                &:nth-child(2):hover {
+                    border-color: $black;
+                    color: $black;
+                }
+                &:nth-child(3):hover {
+                    border-color: $gmail-red;
+                    color: $gmail-red;
+                }
+            }
+        }
+            
+        
+    }
+}

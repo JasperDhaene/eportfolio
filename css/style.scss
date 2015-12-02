@@ -15,69 +15,12 @@ $laptop: "(min-width: 768px) and (max-width: 1280px)";
 
 $desktop: "(min-width: 1280px)";
 
-@font-face {
-    font-family: 'AlexBrush';
-    src: url('../fonts/AlexBrush-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Allura';
-    src: url('../fonts/Allura-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Daniel';
-    src: url('../fonts/daniel.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Blackout';
-    src: url('../fonts/Blackout-Midnight.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'BlackoutInverse';
-    src: url('../fonts/Blackout-2am.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Goodfoot';
-    src: url('../fonts/goodfoot.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Blokletters-Balpen';
-    src: url('../fonts/Blokletters-Balpen.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Hetilica';
-    src: url('../fonts/hetilica.ttf');
-    font-weight: normal;
-    font-style: bold;
-}
-@font-face {
-    font-family: 'WC';
-    src: url('../fonts/WCManoNegraBta.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Scratch';
-    src: url('../fonts/Scratch.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
+@import 'header';
+@import 'footer';
+@import 'fonts';
+@import 'contact';
+@import 'hobbies';
+@import 'portfolio';
 
 html {
     height: 100%;
@@ -86,140 +29,24 @@ html {
         height: 100%;
         background-color: $white;
         font-family: 'Nunito','Droid Sans', sans-serif; //TODO: decide what to do with font
-        margin: 0;
-        padding: 0;
+        //margin: 0;
+        //padding: 0;
         
         background-image: url(../images/background_small.jpg);
         @media #{$desktop} {
             background-image: url(../images/background9.jpg);
         }
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
 
         
         
         a { //TODO find other place
             text-decoration: none;
         }
-        
-        header {
-            width: 100%;
-            
-            //background-color: $green;
-            //background-color: rgba(255, 255, 255, 0);
-            //background-image: url(../images/background3.jpg);
-            background-repeat: no-repeat;
-            background-size:cover;
-
-            > nav { 
-                //border-bottom: 1px solid $white;
-                background-color: rgba(255,255,255,0.1);
-                @media #{$desktop},#{$laptop} {
-                    //float: right;
-                    box-sizing: border-box;
-                    font-size: 1em;
-                    text-align: right;
-                    padding-right: 20px;
-
-                }
-                @media #{$laptop} {
-                    width: 70%;
-                }
-                ul {
-                    padding: 10px 0;
-                    @media #{$desktop},#{$laptop} {
-                        width: 100%;
-                        box-sizing: border-box;
-                        font-size: 50%;
-                    }
-                    li:first-child {
-                        display: block;
-                        font-size: 3em;
-                        margin-left: 15px;
-                        @media #{$desktop},#{$laptop} {
-                            display: inline;
-                            width: 60%;
-                            margin: 0 10px;
-                        }
     
-                        i {
-                            display: inline-block;
-                            width: 20%;
-                            box-sizing: border-box;
-                            color: $yellow;
-                            text-align: center;
-                            @media #{$desktop}, #{$laptop} {
-                                display: none;
-                                visibility: hidden;
-                            }
-                        }
-
-                        h1 {
-                            display: inline-block;
-                            text-align: left;
-                            
-                            width: 70%;
-                            box-sizing: border-box;
-                            font-family: 'Droid Sans';
-                            letter-spacing: 2px;
-                            //Quicksand Goodfoot Libre Baskerville WC
-                            color: $white;
-                            padding-left: 10px;
-                            
-                            @media #{$desktop}, #{$laptop} {
-                                width: 100%;
-                                //width: 20%;
-                            }
-                        }
-
-                        &:hover {
-                            
-                            @media #{$desktop} {
-                                border-bottom: 0;    
-                            }
-                        }
-                    }
-
-
-                    li {
-                        display: none;
-                        @media #{$desktop},#{$laptop} {
-                            display: inline;
-                            margin: 20px;
-                        }
-                        font-size: 1.5em;
-                        margin: 10px 0 10px 40px;
-                        list-style: none;
-                        //margin-left: 40px;
-                        &:hover {
-                            @media #{$desktop} {
-                                border-bottom: 1px solid $white;    
-                            }
-                        }
-
-                        a {
-
-                            color: $white;
-
-                            &:visited {
-                                color: $white;
-                            }    
-                        }
-                    }
-                }
-            }
-
-            //ANIMATION
-
-            &:hover, &:focus {
-                nav li {
-                    display: block;
-                    @media #{$desktop},#{$laptop} {
-                            display: inline;
-                    }
-                }
-            }
-            
+        header {
+            //see _header.scss
         }
         
         > div#homepage { //CONTENT SECTION HOMEPAGE | TODO: merge
@@ -274,8 +101,6 @@ html {
                 font-family: BlackoutInverse
             }
 
-        
-            
             > div { //SUB-CONTENT SECTION
                 width: 100%;
                 
@@ -295,215 +120,10 @@ html {
                     }
                 }
             }
-            
-            form {
-                padding: 0 10%;
-                @media #{$desktop} {
-                    padding: 10% 30%;
-                }
-                
-                
-                input[type=submit] {
-                    display: block;
-                    font-size: 2em;
-                    padding: 5px;
-                    margin: 25px auto 5px auto;
-                    box-sizing: border-box;
-                    font-weight: bold;
-                    background: $purple;
-                    color: $white;
-                    border: 2px solid $black;
-                    border-radius: 10px;
-                    text-align: center;
-                    width: 50%;
-                }
-                input[type=text], input[type=email] {
-                    @extend input[type=submit];
-
-                    margin: 10px auto 30px auto;
-                    text-align: left;
-                    font-weight: normal;
-                    color: $black;
-                    background-color: transparent;
-                    border-radius: 0;
-                    border-width: 0 0 1px 0; 
-                    border-bottom-color: $white;
-                    width: 100%;
-                }
-
-                textarea{
-                    @extend input[type=text];
-                    height: 800%;
-                }
-
-                input[type=submit]:hover {
-                    background-color: $white;
-                    color: $purple;
-                }
-
-                input[type=text]:hover, input[type=email]:hover {
-                    background-color: transparent;
-                    color: $black;
-                }
-
-
-                input:focus, textarea:focus, input:active, textarea:active {
-                    outline: 0;
-                    border-bottom-color: $white;
-                    border-bottom-width: 2px;
-                }
-                
-                
-            }
-            
-            .project {
-                display: flex;
-                flex-direction: row;
-                text-align: center;
-                
-                
-                picture {
-                    flex: 1;
-                        img {
-                            border: 0px;
-                            border-radius: 0px;
-                        }
-                }
-                
-                .description {
-                    display: flex;
-                    flex-direction: column;
-                    flex: 2;
-                    h3 {
-                        flex: 1;
-                        font-size: 2em;
-                        margin: 10px 0;
-                    }
-                    p{
-                        flex: 2;
-                    }
-                }
-            }
-            
-            > h2 {
-                font-size: 5em;
-                text-align: center;
-                color: $purple;
-                margin-bottom: 30px;
-            }
-
-            ul {
-                list-style: none;
-                li {
-                    display: flex;
-                    margin: 5%;
-                    height: 100%;
-                    
-                    
-                    div {
-                        display: flex;
-                        flex: 2;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                        
-                        
-                        h1 {
-                            flex: 1;
-                            text-align: left;
-                            font-size: 3em;
-                        }
-                        p {
-                            flex: 2;
-                        }
-                        
-                    }
-                    
-                    picture {
-                        flex: 1;
-                        width: 30%;
-                        height: 100%;
-                        img {
-                            border: 5px solid #FFF;
-                            box-shadow: 0px 0px 5px #CCC;
-                            margin-bottom: 5%;
-                            border-radius: 50%;
-
-                        }
-                    }
-                }
-            }
-            
         }
-
-
         
         footer {
-            height: 2em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 2em;
-            padding: 5px 0;
-            margin-top: 10%;
-            background-color: transparent;
-            a {
-                i, i:visited {
-                    color: $gray;
-                    &:hover {
-                        color: $yellow;
-                    }
-                }
-            }
-            
+            //see _footer.scss
         }
-        
-        footer#homepage { //TODO: merge
-            height: 10%;
-            position: inherit;
-            padding: 0 5%;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 2em;
-            margin: 0 auto;
-            a {
-                display: block;
-                box-sizing: border-box;
-                border: 3px solid $white;
-                border-radius: 20px;
-                padding: 5px;
-                margin: 10px 10%;
-                width: 70%;
-                text-align: center;
-                color: $white;
-
-                &:nth-child(1):hover {
-                    border-color: $facebook-blue;
-                    color: $facebook-blue;
-                }
-                &:nth-child(2):hover {
-                    border-color: $black;
-                    color: $black;
-                }
-                &:nth-child(3):hover {
-                    border-color: $gmail-red;
-                    color: $gmail-red;
-                }
-            }
-        }
-            
-        
     }
 }
-
-
-
-
-
-
-

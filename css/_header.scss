@@ -1,0 +1,119 @@
+html {
+    body {
+        header {
+            width: 100%;
+            
+            > nav { 
+                background-color: rgba(255,255,255,0.1);
+                @media #{$desktop},#{$laptop} {
+                    box-sizing: border-box;
+                    font-size: 1em;
+                    text-align: right;
+                    padding-right: 20px;
+                }
+                @media #{$laptop} {
+                    width: 70%;
+                }
+                ul {
+                    padding: 10px 0;
+                    @media #{$desktop},#{$laptop} {
+                        width: 100%;
+                        box-sizing: border-box;
+                        font-size: 50%;
+                    }
+                    li:first-child {
+                        display: inline;
+                        margin-left: 15px;
+                        @media #{$desktop},#{$laptop} {
+                            display: inline;
+                            width: 60%;
+                            margin: 0 10px;
+                            font-size: 3em;
+
+                        }
+    
+                        i {
+                            //TODO temp cuz no internet
+                            border: 1px solid $yellow;
+                            width: 20px;
+                            //
+                            display: inline;
+                            //width: 20%; //TODO temp;
+                            box-sizing: border-box;
+                            color: $yellow;
+                            text-align: center;
+                            @media #{$desktop}, #{$laptop} {
+                                display: none;
+                                visibility: hidden;
+                            }
+                        }
+
+                        h1 {
+                            display: inline-block;
+                            text-align: left;
+                            
+                            width: 70%;
+                            box-sizing: border-box;
+                            font-family: 'Droid Sans';
+                            letter-spacing: 2px;
+                            //Quicksand Goodfoot Libre Baskerville WC
+                            color: $white;
+                            padding-left: 10px;
+                            
+                            @media #{$desktop}, #{$laptop} {
+                                width: 100%;
+                                //width: 20%;
+                            }
+                        }
+
+                        &:hover {
+                            
+                            @media #{$desktop} {
+                                border-bottom: 0;    
+                            }
+                        }
+                    }
+
+
+                    li {
+                        display: none;
+                        @media #{$desktop},#{$laptop} {
+                            display: inline;
+                            margin: 20px;
+                        }
+                        font-size: 1.5em;
+                        margin: 10px 0 10px 40px;
+                        list-style: none;
+                        //margin-left: 40px;
+                        &:hover {
+                            @media #{$desktop} {
+                                border-bottom: 1px solid $white;    
+                            }
+                        }
+
+                        a {
+
+                            color: $white;
+
+                            &:visited {
+                                color: $white;
+                            }    
+                        }
+                    }
+                }
+            }
+
+            //ANIMATION
+
+            &:hover, &:focus {
+                nav li {
+                    display: block;
+                    @media #{$desktop},#{$laptop} {
+                            display: inline;
+                    }
+                }
+            }
+            
+        }
+    }
+}

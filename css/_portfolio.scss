@@ -1,16 +1,51 @@
-.content#portfolio {
-    > h2 {
-        font-size: 150%;
-        text-align: center;
-        color: $purple;
-        margin-bottom: 30px;
-    }
-    
-    .project {
-        text-align: center;
-        h3 {
-            font-size: 80%;
-            margin: 10px 0;
+html {
+    body {
+
+        header {
+            //see _header.scss
+        }
+        
+        > div { //CONTENT SECTION
+            
+            .project {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                
+                
+                picture {
+                    flex: 1;
+                        img {
+                            border: 0px;
+                            border-radius: 0px;
+                        }
+                }
+                
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 2;
+                    h3 {
+                        flex: 1;
+                        font-size: 2em;
+                        margin: 10px 0;
+                    }
+                    p{
+                        flex: 2;
+                    }
+                }
+            }
+            
+            > h2 {
+                font-size: 5em;
+                text-align: center;
+                color: $purple;
+                margin-bottom: 30px;
+            } 
+        }
+        
+        footer {
+            //see _footer.scss
         }
     }
 }

@@ -1,3 +1,59 @@
-.content#hobbies {
+html {
+    body {
 
+        header {
+            //see _header.scss
+        }
+        
+        > div { //CONTENT SECTION
+
+            ul {
+                list-style: none;
+                li {
+                    display: flex;
+                    margin: 5%;
+                    height: 100%;
+                    
+                    
+                    div {
+                        display: flex;
+                        flex: 2;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        
+                        
+                        h1 {
+                            flex: 1;
+                            text-align: left;
+                            font-size: 3em;
+                        }
+                        p {
+                            flex: 2;
+                        }
+                        
+                    }
+                    
+                    picture {
+                        flex: 1;
+                        width: 30%;
+                        height: 100%;
+                        img {
+                            border: 5px solid #FFF;
+                            box-shadow: 0px 0px 5px #CCC;
+                            margin-bottom: 5%;
+                            border-radius: 50%;
+
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        footer {
+            //see _footer.scss
+        }
+    }
 }

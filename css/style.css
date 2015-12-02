@@ -1,4 +1,125 @@
 /* Variables */
+html body header {
+  width: 100%; }
+  html body header > nav {
+    background-color: rgba(255, 255, 255, 0.1); }
+    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      html body header > nav {
+        box-sizing: border-box;
+        font-size: 1em;
+        text-align: right;
+        padding-right: 20px; } }
+    @media (min-width: 768px) and (max-width: 1280px) {
+      html body header > nav {
+        width: 70%; } }
+    html body header > nav ul {
+      padding: 10px 0; }
+      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        html body header > nav ul {
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 50%; } }
+      html body header > nav ul li:first-child {
+        display: inline;
+        margin-left: 15px; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header > nav ul li:first-child {
+            display: inline;
+            width: 60%;
+            margin: 0 10px;
+            font-size: 3em; } }
+        html body header > nav ul li:first-child i {
+          border: 1px solid #fff247;
+          width: 20px;
+          display: inline;
+          box-sizing: border-box;
+          color: #fff247;
+          text-align: center; }
+          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+            html body header > nav ul li:first-child i {
+              display: none;
+              visibility: hidden; } }
+        html body header > nav ul li:first-child h1 {
+          display: inline-block;
+          text-align: left;
+          width: 70%;
+          box-sizing: border-box;
+          font-family: 'Droid Sans';
+          letter-spacing: 2px;
+          color: #fff9ff;
+          padding-left: 10px; }
+          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+            html body header > nav ul li:first-child h1 {
+              width: 100%; } }
+        @media (min-width: 1280px) {
+          html body header > nav ul li:first-child:hover {
+            border-bottom: 0; } }
+      html body header > nav ul li {
+        display: none;
+        font-size: 1.5em;
+        margin: 10px 0 10px 40px;
+        list-style: none; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header > nav ul li {
+            display: inline;
+            margin: 20px; } }
+        @media (min-width: 1280px) {
+          html body header > nav ul li:hover {
+            border-bottom: 1px solid #fff9ff; } }
+        html body header > nav ul li a {
+          color: #fff9ff; }
+          html body header > nav ul li a:visited {
+            color: #fff9ff; }
+  html body header:hover nav li, html body header:focus nav li {
+    display: block; }
+    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      html body header:hover nav li, html body header:focus nav li {
+        display: inline; } }
+
+html body footer {
+  height: 2em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  padding: 5px 0;
+  margin-top: 10%;
+  background-color: transparent; }
+  html body footer a i, html body footer a i:visited {
+    color: #e4e0e5; }
+    html body footer a i:hover, html body footer a i:visited:hover {
+      color: #fff247; }
+html body footer#homepage {
+  height: 10%;
+  position: inherit;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2em;
+  margin: 0 auto; }
+  html body footer#homepage a {
+    display: block;
+    box-sizing: border-box;
+    border: 3px solid #fff9ff;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 10%;
+    width: 70%;
+    text-align: center;
+    color: #fff9ff; }
+    html body footer#homepage a:nth-child(1):hover {
+      border-color: #3B5998;
+      color: #3B5998; }
+    html body footer#homepage a:nth-child(2):hover {
+      border-color: #111111;
+      color: #111111; }
+    html body footer#homepage a:nth-child(3):hover {
+      border-color: #CC181E;
+      color: #CC181E; }
+
 @font-face {
   font-family: 'AlexBrush';
   src: url("../fonts/AlexBrush-Regular.ttf");
@@ -49,14 +170,107 @@
   src: url("../fonts/Scratch.ttf");
   font-weight: normal;
   font-style: normal; }
+html body > div form {
+  padding: 0 10%; }
+  @media (min-width: 1280px) {
+    html body > div form {
+      padding: 10% 30%; } }
+  html body > div form input[type=submit], html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+    display: block;
+    font-size: 2em;
+    padding: 5px;
+    margin: 25px auto 5px auto;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: #392a6d;
+    color: #fff9ff;
+    border: 2px solid #111111;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%; }
+  html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+    margin: 10px auto 30px auto;
+    text-align: left;
+    font-weight: normal;
+    color: #111111;
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    border-bottom-color: #fff9ff;
+    width: 100%; }
+  html body > div form textarea {
+    height: 800%; }
+  html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+    background-color: #fff9ff;
+    color: #392a6d; }
+  html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+    background-color: transparent;
+    color: #111111; }
+  html body > div form input:focus, html body > div form textarea:focus, html body > div form input:active, html body > div form textarea:active {
+    outline: 0;
+    border-bottom-color: #fff9ff;
+    border-bottom-width: 2px; }
+
+html body > div ul {
+  list-style: none; }
+  html body > div ul li {
+    display: flex;
+    margin: 5%;
+    height: 100%; }
+    html body > div ul li div {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      html body > div ul li div h1 {
+        flex: 1;
+        text-align: left;
+        font-size: 3em; }
+      html body > div ul li div p {
+        flex: 2; }
+    html body > div ul li picture {
+      flex: 1;
+      width: 30%;
+      height: 100%; }
+      html body > div ul li picture img {
+        border: 5px solid #FFF;
+        box-shadow: 0px 0px 5px #CCC;
+        margin-bottom: 5%;
+        border-radius: 50%; }
+
+html body > div .project {
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+  html body > div .project picture {
+    flex: 1; }
+    html body > div .project picture img {
+      border: 0px;
+      border-radius: 0px; }
+  html body > div .project .description {
+    display: flex;
+    flex-direction: column;
+    flex: 2; }
+    html body > div .project .description h3 {
+      flex: 1;
+      font-size: 2em;
+      margin: 10px 0; }
+    html body > div .project .description p {
+      flex: 2; }
+html body > div > h2 {
+  font-size: 5em;
+  text-align: center;
+  color: #392a6d;
+  margin-bottom: 30px; }
+
 html {
   height: 100%; }
   html body {
     height: 100%;
     background-color: #fff9ff;
     font-family: 'Nunito','Droid Sans', sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url(../images/background_small.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
@@ -65,83 +279,6 @@ html {
         background-image: url(../images/background9.jpg); } }
     html body a {
       text-decoration: none; }
-    html body header {
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      html body header > nav {
-        background-color: rgba(255, 255, 255, 0.1); }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body header > nav {
-            box-sizing: border-box;
-            font-size: 1em;
-            text-align: right;
-            padding-right: 20px; } }
-        @media (min-width: 768px) and (max-width: 1280px) {
-          html body header > nav {
-            width: 70%; } }
-        html body header > nav ul {
-          padding: 10px 0; }
-          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-            html body header > nav ul {
-              width: 100%;
-              box-sizing: border-box;
-              font-size: 50%; } }
-          html body header > nav ul li:first-child {
-            display: block;
-            font-size: 3em;
-            margin-left: 15px; }
-            @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-              html body header > nav ul li:first-child {
-                display: inline;
-                width: 60%;
-                margin: 0 10px; } }
-            html body header > nav ul li:first-child i {
-              display: inline-block;
-              width: 20%;
-              box-sizing: border-box;
-              color: #fff247;
-              text-align: center; }
-              @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-                html body header > nav ul li:first-child i {
-                  display: none;
-                  visibility: hidden; } }
-            html body header > nav ul li:first-child h1 {
-              display: inline-block;
-              text-align: left;
-              width: 70%;
-              box-sizing: border-box;
-              font-family: 'Droid Sans';
-              letter-spacing: 2px;
-              color: #fff9ff;
-              padding-left: 10px; }
-              @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-                html body header > nav ul li:first-child h1 {
-                  width: 100%; } }
-            @media (min-width: 1280px) {
-              html body header > nav ul li:first-child:hover {
-                border-bottom: 0; } }
-          html body header > nav ul li {
-            display: none;
-            font-size: 1.5em;
-            margin: 10px 0 10px 40px;
-            list-style: none; }
-            @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-              html body header > nav ul li {
-                display: inline;
-                margin: 20px; } }
-            @media (min-width: 1280px) {
-              html body header > nav ul li:hover {
-                border-bottom: 1px solid #fff9ff; } }
-            html body header > nav ul li a {
-              color: #fff9ff; }
-              html body header > nav ul li a:visited {
-                color: #fff9ff; }
-      html body header:hover nav li, html body header:focus nav li {
-        display: block; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body header:hover nav li, html body header:focus nav li {
-            display: inline; } }
     html body > div#homepage {
       width: 100%;
       overflow: auto;
@@ -186,140 +323,5 @@ html {
             box-shadow: 0px 0px 5px #CCC;
             margin-bottom: 5%;
             border-radius: 50%; }
-      html body > div form {
-        padding: 0 10%; }
-        @media (min-width: 1280px) {
-          html body > div form {
-            padding: 10% 30%; } }
-        html body > div form input[type=submit], html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
-          display: block;
-          font-size: 2em;
-          padding: 5px;
-          margin: 25px auto 5px auto;
-          box-sizing: border-box;
-          font-weight: bold;
-          background: #392a6d;
-          color: #fff9ff;
-          border: 2px solid #111111;
-          border-radius: 10px;
-          text-align: center;
-          width: 50%; }
-        html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
-          margin: 10px auto 30px auto;
-          text-align: left;
-          font-weight: normal;
-          color: #111111;
-          background-color: transparent;
-          border-radius: 0;
-          border-width: 0 0 1px 0;
-          border-bottom-color: #fff9ff;
-          width: 100%; }
-        html body > div form textarea {
-          height: 800%; }
-        html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
-          background-color: #fff9ff;
-          color: #392a6d; }
-        html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
-          background-color: transparent;
-          color: #111111; }
-        html body > div form input:focus, html body > div form textarea:focus, html body > div form input:active, html body > div form textarea:active {
-          outline: 0;
-          border-bottom-color: #fff9ff;
-          border-bottom-width: 2px; }
-      html body > div .project {
-        display: flex;
-        flex-direction: row;
-        text-align: center; }
-        html body > div .project picture {
-          flex: 1; }
-          html body > div .project picture img {
-            border: 0px;
-            border-radius: 0px; }
-        html body > div .project .description {
-          display: flex;
-          flex-direction: column;
-          flex: 2; }
-          html body > div .project .description h3 {
-            flex: 1;
-            font-size: 2em;
-            margin: 10px 0; }
-          html body > div .project .description p {
-            flex: 2; }
-      html body > div > h2 {
-        font-size: 5em;
-        text-align: center;
-        color: #392a6d;
-        margin-bottom: 30px; }
-      html body > div ul {
-        list-style: none; }
-        html body > div ul li {
-          display: flex;
-          margin: 5%;
-          height: 100%; }
-          html body > div ul li div {
-            display: flex;
-            flex: 2;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%; }
-            html body > div ul li div h1 {
-              flex: 1;
-              text-align: left;
-              font-size: 3em; }
-            html body > div ul li div p {
-              flex: 2; }
-          html body > div ul li picture {
-            flex: 1;
-            width: 30%;
-            height: 100%; }
-            html body > div ul li picture img {
-              border: 5px solid #FFF;
-              box-shadow: 0px 0px 5px #CCC;
-              margin-bottom: 5%;
-              border-radius: 50%; }
-    html body footer {
-      height: 2em;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      font-size: 2em;
-      padding: 5px 0;
-      margin-top: 10%;
-      background-color: transparent; }
-      html body footer a i, html body footer a i:visited {
-        color: #e4e0e5; }
-        html body footer a i:hover, html body footer a i:visited:hover {
-          color: #fff247; }
-    html body footer#homepage {
-      height: 10%;
-      position: inherit;
-      padding: 0 5%;
-      width: 100%;
-      box-sizing: border-box;
-      font-size: 2em;
-      margin: 0 auto; }
-      html body footer#homepage a {
-        display: block;
-        box-sizing: border-box;
-        border: 3px solid #fff9ff;
-        border-radius: 20px;
-        padding: 5px;
-        margin: 10px 10%;
-        width: 70%;
-        text-align: center;
-        color: #fff9ff; }
-        html body footer#homepage a:nth-child(1):hover {
-          border-color: #3B5998;
-          color: #3B5998; }
-        html body footer#homepage a:nth-child(2):hover {
-          border-color: #111111;
-          color: #111111; }
-        html body footer#homepage a:nth-child(3):hover {
-          border-color: #CC181E;
-          color: #CC181E; }
 
 /*# sourceMappingURL=style.css.map */
