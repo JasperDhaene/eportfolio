@@ -27,20 +27,19 @@ html {
 
     body {
         height: 100%;
-        background-color: $white;
         font-family: 'Nunito','Droid Sans', sans-serif; //TODO: decide what to do with font
-        //margin: 0;
-        //padding: 0;
         
+        background-color: $black;
         background-image: url(../images/background_small.jpg);
+        background-repeat: no-repeat;
+        //background-size: cover;
+        
         @media #{$desktop} {
             background-image: url(../images/background9.jpg);
-        }
-        background-repeat: no-repeat;
-        background-size: cover;
+            background-size: cover;
 
-        
-        
+        }
+
         a { //TODO find other place
             text-decoration: none;
         }
@@ -78,8 +77,15 @@ html {
         > div#about {
             p {
                 //background-color: rgba(255,255,255,0.1);
-                color: $black;
-                margin: 0 30%;
+                color: $white;
+                margin: 5% 0;
+                text-align: left;
+                
+                @media #{$desktop},#{$laptop} {
+                    color: $black;
+                    margin: 0 30%;
+                    text-align: center;
+                }
             }
             
         }
@@ -100,26 +106,30 @@ html {
                 font-size: 5em;
                 font-family: BlackoutInverse
             }
-
-            > div { //SUB-CONTENT SECTION
-                width: 100%;
-                
-                p{
-                    padding: 0 5%;
-                }
-                                
-                > picture {
-                    text-align: center;
-                    
-                    img {
-                        border: 5px solid #FFF;
-                        box-shadow: 0px 0px 5px #CCC;
-                        margin-bottom: 5%;
-                        border-radius: 50%;
-                        
-                    }
-                }
+            
+            //about styling below
+            p{
+                padding: 0 5%;
             }
+
+            > picture {
+                text-align: center;
+                
+                img {
+                    border: 5px solid #FFF;
+                    box-shadow: 0px 0px 5px #CCC;
+                    margin-bottom: 5%;
+                    border-radius: 50%;
+                    
+                    @media #{$desktop},#{$laptop} {
+                        margin-top: 30px; //TODO: find uniformity
+                    }
+                    
+                }
+                
+
+            }
+            
         }
         
         footer {
