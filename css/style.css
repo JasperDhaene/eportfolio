@@ -1,16 +1,4 @@
 /* Variables */
-.content#homepage p {
-  text-align: center; }
-
-/*
-@import 'about';
-@import 'i1talent';
-@import 'CV';
-@import 'portfolio';
-@import 'hobbies';
-@import 'links';
-@import 'contact';
-*/
 @font-face {
   font-family: 'AlexBrush';
   src: url("../fonts/AlexBrush-Regular.ttf");
@@ -168,6 +156,12 @@ html {
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body > div#homepage h1 {
             display: block; } }
+    html body > div#portfolio {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #111111; }
+    html body > div#about p {
+      color: #111111;
+      margin: 0 30%; }
     html body > div {
       width: 100%;
       overflow: auto;
@@ -175,19 +169,19 @@ html {
       text-align: center;
       padding-top: 5px;
       height: 100%; }
-      html body > div h1 {
+      html body > div > h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > div h1 {
+          html body > div > h1 {
             display: none; } }
       html body > div > div {
         width: 100%; }
         html body > div > div p {
           padding: 0 5%; }
-        html body > div > div picture {
+        html body > div > div > picture {
           text-align: center; }
-          html body > div > div picture img {
+          html body > div > div > picture img {
             border: 5px solid #FFF;
             box-shadow: 0px 0px 5px #CCC;
             margin-bottom: 5%;
@@ -214,7 +208,7 @@ html {
           margin: 10px auto 30px auto;
           text-align: left;
           font-weight: normal;
-          color: black;
+          color: #111111;
           background-color: transparent;
           border-radius: 0;
           border-width: 0 0 1px 0;
@@ -222,23 +216,72 @@ html {
           width: 100%; }
         html body > div form textarea {
           height: 800%; }
-        html body > div form input:focus, html body > div form textarea:focus {
-          outline: 0;
-          border-bottom-color: #392a6d;
-          border-bottom-width: 2px; }
         html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
-          background: transparent;
+          background-color: #fff9ff;
           color: #392a6d; }
+        html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+          background-color: transparent;
+          color: #111111; }
+        html body > div form input:focus, html body > div form textarea:focus, html body > div form input:active, html body > div form textarea:active {
+          outline: 0;
+          border-bottom-color: #fff9ff;
+          border-bottom-width: 2px; }
       html body > div .project {
+        display: flex;
+        flex-direction: row;
         text-align: center; }
-        html body > div .project h3 {
-          font-size: 80%;
-          margin: 10px 0; }
+        html body > div .project picture {
+          flex: 1; }
+          html body > div .project picture img {
+            border: 0px;
+            border-radius: 0px; }
+        html body > div .project .description {
+          display: flex;
+          flex-direction: column;
+          flex: 2; }
+          html body > div .project .description h3 {
+            flex: 1;
+            font-size: 2em;
+            margin: 10px 0; }
+          html body > div .project .description p {
+            flex: 2; }
       html body > div > h2 {
-        font-size: 150%;
+        font-size: 5em;
         text-align: center;
-        color: #fff9ff;
+        color: #392a6d;
         margin-bottom: 30px; }
+      html body > div ul li {
+        margin: 5%;
+        height: 100%; }
+        html body > div ul li h1 {
+          text-align: left;
+          margin-left: 40%;
+          display: block;
+          font-size: 3em; }
+        html body > div ul li div {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%; }
+          html body > div ul li div p {
+            justify-content: center;
+            align-items: center; }
+        html body > div ul li p {
+          display: inline-flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          width: 50%;
+          height: 50%; }
+        html body > div ul li picture {
+          width: 30%;
+          display: inline-block;
+          height: 100%; }
+          html body > div ul li picture img {
+            border: 5px solid #FFF;
+            box-shadow: 0px 0px 5px #CCC;
+            margin-bottom: 5%;
+            border-radius: 50%; }
     html body footer {
       height: 2em;
       position: absolute;
