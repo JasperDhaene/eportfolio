@@ -34,24 +34,30 @@ html {
         }
         
         footer#homepage { //TODO: merge
-            height: 10%;
-            position: inherit;
-            padding: 0 5%;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 2em;
-            margin: 0 auto;
+            position: static;         
+            flex-direction: column;
+            
+            @media #{$desktop}, #{$laptop} {
+                position: absolute;
+                flex-direction: row;
+                height: 10%;
+            }
             a {
-                display: block;
+                
+                //display: block;
                 box-sizing: border-box;
                 border: 3px solid $white;
                 border-radius: 20px;
-                padding: 5px;
+                //padding: 5px;
                 margin: 10px 10%;
                 width: 70%;
                 text-align: center;
                 color: $white;
-
+                
+                i {
+                    height: 2em;
+                }
+                
                 &:nth-child(1):hover {
                     border-color: $facebook-blue;
                     color: $facebook-blue;
