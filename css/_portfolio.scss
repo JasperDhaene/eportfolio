@@ -9,8 +9,13 @@ html {
             
             .project {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 text-align: center;
+                margin: 5% 0;
+                
+                @media #{$desktop}, #{$laptop} {
+                    flex-direction: row;
+                }
                 
                 
                 picture {
@@ -25,12 +30,14 @@ html {
                     display: flex;
                     flex-direction: column;
                     flex: 2;
+                    text-align: left;
                     h3 {
                         flex: 1;
                         font-size: 2em;
                         margin: 10px 0;
                     }
                     p{
+                        margin: 10px 0;
                         flex: 2;
                     }
                 }

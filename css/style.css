@@ -108,8 +108,6 @@ html body footer#homepage {
     width: 70%;
     text-align: center;
     color: #fff9ff; }
-    html body footer#homepage a i {
-      height: 2em; }
     html body footer#homepage a:nth-child(1):hover {
       border-color: #3B5998;
       color: #3B5998; }
@@ -242,8 +240,12 @@ html body > div ul {
 
 html body > div .project {
   display: flex;
-  flex-direction: row;
-  text-align: center; }
+  flex-direction: column;
+  text-align: center;
+  margin: 5% 0; }
+  @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+    html body > div .project {
+      flex-direction: row; } }
   html body > div .project picture {
     flex: 1; }
     html body > div .project picture img {
@@ -252,12 +254,14 @@ html body > div .project {
   html body > div .project .description {
     display: flex;
     flex-direction: column;
-    flex: 2; }
+    flex: 2;
+    text-align: left; }
     html body > div .project .description h3 {
       flex: 1;
       font-size: 2em;
       margin: 10px 0; }
     html body > div .project .description p {
+      margin: 10px 0;
       flex: 2; }
 html body > div > h2 {
   font-size: 5em;
@@ -318,14 +322,14 @@ html {
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body > div > h1 {
             display: none; } }
-      html body > div p {
+      html body > div > p {
         padding: 0 5%; }
       html body > div > picture {
         text-align: center; }
         html body > div > picture img {
           border: 5px solid #FFF;
           box-shadow: 0px 0px 5px #CCC;
-          margin-bottom: 5%;
+          margin-bottom: 2%;
           border-radius: 50%; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body > div > picture img {

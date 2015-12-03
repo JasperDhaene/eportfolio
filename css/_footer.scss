@@ -54,10 +54,6 @@ html {
                 text-align: center;
                 color: $white;
                 
-                i {
-                    height: 2em;
-                }
-                
                 &:nth-child(1):hover {
                     border-color: $facebook-blue;
                     color: $facebook-blue;
