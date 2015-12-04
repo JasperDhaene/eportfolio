@@ -168,12 +168,12 @@ html body footer#homepage {
   src: url("../fonts/Scratch.ttf");
   font-weight: normal;
   font-style: normal; }
-html body > div form {
+html body > main form {
   padding: 0 10%; }
   @media (min-width: 1280px) {
-    html body > div form {
+    html body > main form {
       padding: 10% 30%; } }
-  html body > div form input[type=submit], html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+  html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
     display: block;
     font-size: 2em;
     padding: 5px;
@@ -186,7 +186,7 @@ html body > div form {
     border-radius: 10px;
     text-align: center;
     width: 50%; }
-  html body > div form input[type=text], html body > div form textarea, html body > div form input[type=email] {
+  html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
     margin: 10px auto 30px auto;
     text-align: left;
     font-weight: normal;
@@ -196,74 +196,74 @@ html body > div form {
     border-width: 0 0 1px 0;
     border-bottom-color: #fff9ff;
     width: 100%; }
-  html body > div form textarea {
+  html body > main form textarea {
     height: 800%; }
-  html body > div form input[type=submit]:hover, html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+  html body > main form input[type=submit]:hover, html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
     background-color: #fff9ff;
     color: #392a6d; }
-  html body > div form input[type=text]:hover, html body > div form textarea:hover, html body > div form input[type=email]:hover {
+  html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
     background-color: transparent;
     color: #111111; }
-  html body > div form input:focus, html body > div form textarea:focus, html body > div form input:active, html body > div form textarea:active {
+  html body > main form input:focus, html body > main form textarea:focus, html body > main form input:active, html body > main form textarea:active {
     outline: 0;
     border-bottom-color: #fff9ff;
     border-bottom-width: 2px; }
 
-html body > div ul {
+html body > main ul {
   list-style: none; }
-  html body > div ul li {
+  html body > main ul li {
     display: flex;
     margin: 5%;
     height: 100%; }
-    html body > div ul li div {
+    html body > main ul li div {
       display: flex;
       flex: 2;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100%; }
-      html body > div ul li div h1 {
+      html body > main ul li div h1 {
         flex: 1;
         text-align: left;
         font-size: 3em; }
-      html body > div ul li div p {
+      html body > main ul li div p {
         flex: 2; }
-    html body > div ul li picture {
+    html body > main ul li picture {
       flex: 1;
       width: 30%;
       height: 100%; }
-      html body > div ul li picture img {
+      html body > main ul li picture img {
         border: 5px solid #FFF;
         box-shadow: 0px 0px 5px #CCC;
         margin-bottom: 5%;
         border-radius: 50%; }
 
-html body > div .project {
+html body > main .project {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 5% 0; }
   @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-    html body > div .project {
+    html body > main .project {
       flex-direction: row; } }
-  html body > div .project picture {
+  html body > main .project picture {
     flex: 1; }
-    html body > div .project picture img {
+    html body > main .project picture img {
       border: 0px;
       border-radius: 0px; }
-  html body > div .project .description {
+  html body > main .project .description {
     display: flex;
     flex-direction: column;
     flex: 2;
     text-align: left; }
-    html body > div .project .description h3 {
+    html body > main .project .description h3 {
       flex: 1;
       font-size: 2em;
       margin: 10px 0; }
-    html body > div .project .description p {
+    html body > main .project .description p {
       margin: 10px 0;
       flex: 2; }
-html body > div > h2 {
+html body > main > h2 {
   font-size: 5em;
   text-align: center;
   color: #392a6d;
@@ -282,7 +282,7 @@ html {
         background-image: url(../hue/43-Black%20Sands.png); } }
     html body a {
       text-decoration: none; }
-    html body > div#homepage {
+    html body > main#homepage {
       width: 100%;
       overflow: auto;
       display: flex;
@@ -290,46 +290,46 @@ html {
       align-items: center;
       color: #fff9ff;
       text-align: center; }
-      html body > div#homepage h1 {
+      html body > main#homepage h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > div#homepage h1 {
+          html body > main#homepage h1 {
             display: block; } }
-    html body > div#portfolio {
+    html body > main#portfolio {
       color: #111111; }
-    html body > div#about p {
+    html body > main#about p {
       color: #fff9ff;
       margin: 5% 0;
       text-align: left; }
       @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-        html body > div#about p {
+        html body > main#about p {
           color: #111111;
           margin: 0 30%;
           text-align: center; } }
-    html body > div {
+    html body > main {
       width: 100%;
       color: #fff9ff;
       text-align: center;
       padding-top: 5px;
       height: 100%; }
-      html body > div > h1 {
+      html body > main > h1 {
         font-size: 5em;
         font-family: BlackoutInverse; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > div > h1 {
+          html body > main > h1 {
             display: none; } }
-      html body > div > p {
+      html body > main > p {
         padding: 0 5%; }
-      html body > div > picture {
+      html body > main > picture {
         text-align: center; }
-        html body > div > picture img {
+        html body > main > picture img {
           border: 5px solid #FFF;
           box-shadow: 0px 0px 5px #CCC;
           margin-bottom: 2%;
           border-radius: 50%; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-            html body > div > picture img {
+            html body > main > picture img {
               margin-top: 30px; } }
     html body .form-control {
       border: 1px solid #111111;

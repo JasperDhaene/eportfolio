@@ -50,7 +50,7 @@ html {
             //see _header.scss
         }
         
-        > div#homepage { //CONTENT SECTION HOMEPAGE | TODO: merge
+        > main#homepage { //CONTENT SECTION HOMEPAGE | TODO: merge
             width: 100%;
             overflow: auto;
             display: flex;
@@ -71,12 +71,12 @@ html {
             
             
         }
-        > div#portfolio {
+        > main#portfolio {
             //background-color: rgba(255,255,255,0.8);
             color: $black;
         }
 
-        > div#about {
+        > main#about {
             p {
                 //background-color: rgba(255,255,255,0.1);
                 color: $white;
@@ -92,7 +92,7 @@ html {
             
         }
         
-        > div { //CONTENT SECTION
+        > main { //CONTENT SECTION
             width: 100%;
             //overflow: auto;            
             color: $white;
