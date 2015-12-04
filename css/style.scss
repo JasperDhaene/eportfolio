@@ -7,6 +7,7 @@ $green: #033;
 $yellow: #fff247;// //fff9ff
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
+$background-black: #222428;
 
 $font: Helvetica,Arial,sans-serif;
 
@@ -30,14 +31,15 @@ html {
         font-family: 'Nunito','Droid Sans', sans-serif; //TODO: decide what to do with font
         
         background-color: $black;
-        background-image: url(../images/background_small.jpg);
+        //background-image: url(../images/background_small.jpg);
+        background-image: url(../images/hue1.png);
         background-repeat: no-repeat;
         //background-size: cover;
         
         @media #{$desktop} {
-            background-image: url(../images/background9.jpg);
-            background-size: cover;
-
+            //background-image: url(../hue/26.png);
+            //background-image: url(../hue/28.png);
+            background-image: url(../hue/43-Black%20Sands.png);
         }
 
         a { //TODO find other place
@@ -70,7 +72,7 @@ html {
             
         }
         > div#portfolio {
-            background-color: rgba(255,255,255,0.8);
+            //background-color: rgba(255,255,255,0.8);
             color: $black;
         }
 
@@ -92,7 +94,7 @@ html {
         
         > div { //CONTENT SECTION
             width: 100%;
-            overflow: auto;            
+            //overflow: auto;            
             color: $white;
             text-align: center;
             padding-top: 5px;
@@ -130,6 +132,18 @@ html {
 
             }
             
+        }
+        
+        .form-control {
+            
+          border: 1px solid $black;
+          border-radius: .15em;
+
+          padding: 5px;
+          margin-top: 10px;
+
+          background: white;
+          color: $black;
         }
         
         footer {

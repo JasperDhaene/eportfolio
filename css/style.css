@@ -275,12 +275,11 @@ html {
     height: 100%;
     font-family: 'Nunito','Droid Sans', sans-serif;
     background-color: #111111;
-    background-image: url(../images/background_small.jpg);
+    background-image: url(../images/hue1.png);
     background-repeat: no-repeat; }
     @media (min-width: 1280px) {
       html body {
-        background-image: url(../images/background9.jpg);
-        background-size: cover; } }
+        background-image: url(../hue/43-Black%20Sands.png); } }
     html body a {
       text-decoration: none; }
     html body > div#homepage {
@@ -298,7 +297,6 @@ html {
           html body > div#homepage h1 {
             display: block; } }
     html body > div#portfolio {
-      background-color: rgba(255, 255, 255, 0.8);
       color: #111111; }
     html body > div#about p {
       color: #fff9ff;
@@ -311,7 +309,6 @@ html {
           text-align: center; } }
     html body > div {
       width: 100%;
-      overflow: auto;
       color: #fff9ff;
       text-align: center;
       padding-top: 5px;
@@ -334,5 +331,12 @@ html {
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body > div > picture img {
               margin-top: 30px; } }
+    html body .form-control {
+      border: 1px solid #111111;
+      border-radius: .15em;
+      padding: 5px;
+      margin-top: 10px;
+      background: white;
+      color: #111111; }
 
 /*# sourceMappingURL=style.css.map */
