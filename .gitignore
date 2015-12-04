@@ -2,3 +2,5 @@
 *.pdf
 *~
 css/.sass-cache
+hue/*
+cv/*
