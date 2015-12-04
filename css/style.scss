@@ -7,7 +7,9 @@ $green: #033;
 $yellow: #fff247;// //fff9ff
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
+$github-gray: #3f3c3c;
 $background-black: #222428;
+
 
 $font: Helvetica,Arial,sans-serif;
 
@@ -32,14 +34,17 @@ html {
         
         background-color: $black;
         //background-image: url(../images/background_small.jpg);
-        background-image: url(../images/hue1.png);
+        //background-image: url(../images/hue1.png);
+//      background-image: url(../images/bg5.jpeg);
+
         background-repeat: no-repeat;
-        //background-size: cover;
+        background-size: cover;
         
         @media #{$desktop} {
             //background-image: url(../hue/26.png);
             //background-image: url(../hue/28.png);
-            background-image: url(../hue/43-Black%20Sands.png);
+            //background-image: url(../hue/43-Black%20Sands.png);
+            background-image: url(../images/bg6.jpeg);
         }
 
         a { //TODO find other place
@@ -54,19 +59,38 @@ html {
             width: 100%;
             overflow: auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: $white;
             text-align: center;
             //margin-top: 10%;
             
-            
             h1 {
+                flex: 1;
+                //font-family: 'WC', cursive;
+                //font-family: 'Goodfoot';
+                font-family: 'WC';
+                font-size: 4em;
+                //margin-top: 20px;
+                @media #{$desktop},#{$laptop} {
+                    display: block;  
+                    font-size: 7em;
+
+                }
+                
+                
+            }
+            
+            h2 {
+                flex: 2;
                 @media #{$desktop},#{$laptop} {
                     display: block;  
                 }
                 font-size: 5em;
+                color: $white;
                 font-family: BlackoutInverse;
+                
             }
             
             
@@ -98,7 +122,7 @@ html {
             color: $white;
             text-align: center;
             padding-top: 5px;
-            height: 100%;
+            height: 90%;
 
             
             > h1 {
