@@ -100,29 +100,13 @@ html {
             //background-color: rgba(255,255,255,0.8);
             color: $black;
         }
-
-        > main#about {
-            p {
-                //background-color: rgba(255,255,255,0.1);
-                color: $white;
-                margin: 5% 0;
-                text-align: left;
-                
-                @media #{$desktop},#{$laptop} {
-                    color: $black;
-                    margin: 0 30%;
-                    text-align: center;
-                }
-            }
-            
-        }
         
         > main { //CONTENT SECTION
             width: 100%;
             //overflow: auto;            
             color: $white;
             text-align: center;
-            padding-top: 5px;
+            padding-top: 5%;
             height: 90%;
 
             
@@ -150,22 +134,37 @@ html {
                 padding: 0 5%;
             }
 
-            > picture {
-                text-align: center;
-                
-                img {
-                    border: 5px solid #FFF;
-                    box-shadow: 0px 0px 5px #CCC;
-                    margin-bottom: 2%;
-                    border-radius: 50%;
+            div.pictureText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                picture {
+                    flex: 1;
                     
-                    @media #{$desktop},#{$laptop} {
-                        margin-top: 30px; //TODO: find uniformity
-                    }
-                    
-                }
-                
+                    img {
+                        border: 5px solid #FFF;
+                        box-shadow: 0px 0px 5px #CCC;
+                        margin-bottom: 2%;
+                        border-radius: 50%;
 
+                        @media #{$desktop},#{$laptop} {
+                            //margin-top: 30px;
+                        }
+
+                    }
+                }
+                section {
+                    display: flex;
+                    flex: 3;
+                    flex-direction: row;
+                    //justify-content: space-between;
+                    padding: 0 30px;
+                    p {
+                        flex: 1;
+                        text-align: left;
+                    }
+                }
             }
             
         }

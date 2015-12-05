@@ -310,20 +310,11 @@ html {
             display: block; } }
     html body > main#portfolio {
       color: #111111; }
-    html body > main#about p {
-      color: #fff9ff;
-      margin: 5% 0;
-      text-align: left; }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-        html body > main#about p {
-          color: #111111;
-          margin: 0 30%;
-          text-align: center; } }
     html body > main {
       width: 100%;
       color: #fff9ff;
       text-align: center;
-      padding-top: 5px;
+      padding-top: 5%;
       height: 90%; }
       html body > main > h1 {
         font-size: 5em;
@@ -340,16 +331,26 @@ html {
             display: none; } }
       html body > main > p {
         padding: 0 5%; }
-      html body > main > picture {
-        text-align: center; }
-        html body > main > picture img {
-          border: 5px solid #FFF;
-          box-shadow: 0px 0px 5px #CCC;
-          margin-bottom: 2%;
-          border-radius: 50%; }
-          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-            html body > main > picture img {
-              margin-top: 30px; } }
+      html body > main div.pictureText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        html body > main div.pictureText picture {
+          flex: 1; }
+          html body > main div.pictureText picture img {
+            border: 5px solid #FFF;
+            box-shadow: 0px 0px 5px #CCC;
+            margin-bottom: 2%;
+            border-radius: 50%; }
+        html body > main div.pictureText section {
+          display: flex;
+          flex: 3;
+          flex-direction: row;
+          padding: 0 30px; }
+          html body > main div.pictureText section p {
+            flex: 1;
+            text-align: left; }
     html body .form-control {
       border: 1px solid #111111;
       border-radius: .15em;
