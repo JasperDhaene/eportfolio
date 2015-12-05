@@ -331,6 +331,11 @@ html {
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body > main h2 {
             display: none; } }
+      html body > main h4 a, html body > main h4 a:hover, html body > main h4 a:visited {
+        color: #392a6d; }
+      html body > main section {
+        margin: 10px 30px;
+        text-align: left; }
       html body > main > p {
         padding: 0 5%; }
       html body > main div.pictureText {
