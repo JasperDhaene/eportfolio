@@ -8,48 +8,49 @@ html {
                 @media #{$desktop},#{$laptop} {
                     box-sizing: border-box;
                     font-size: 1em;
-                    text-align: right;
-                    padding-right: 20px;
+                    display: block;
+                    vertical-align: baseline;
                 }
                 @media #{$laptop} {
-                    width: 70%;
+                    //width: 100%;
                 }
                 ul {
                     padding: 10px 0;
                     @media #{$desktop},#{$laptop} {
                         width: 100%;
                         box-sizing: border-box;
-                        font-size: 50%;
+                        font-size: 50%; //TODO
+                        display: flex;
+                        flex-flow: row nowrap;
+                        padding: 0 10px;
+                        justify-content: flex-end;
+                        align-self: flex-start;
+                        vertical-align: baseline;
+                        
                     }
                     li:first-child {
-                        display: inline;
+                        display: block;
                         margin-left: 15px;
                         @media #{$desktop},#{$laptop} {
-                            display: inline;
-                            width: 60%;
                             margin: 0 10px;
                             font-size: 3em;
-
+                            align-self: flex-start;
+                            vertical-align: baseline;
                         }
     
                         i {
-                            //TODO temp cuz no internet
-                            border: 1px solid $yellow;
-                            width: 20px;
-                            //
-                            display: inline;
-                            //width: 20%; //TODO temp;
+                            
+                            //display: inline;
                             box-sizing: border-box;
                             color: $yellow;
                             text-align: center;
                             @media #{$desktop}, #{$laptop} {
                                 display: none;
-                                visibility: hidden;
                             }
                         }
 
-                        h1 {
-                            display: inline-block;
+                        h6 {
+                            //display: inline-block;
                             text-align: left;
                             
                             width: 70%;
@@ -58,11 +59,12 @@ html {
                             letter-spacing: 2px;
                             //Quicksand Goodfoot Libre Baskerville WC
                             color: $white;
-                            padding-left: 10px;
+                            //padding-left: 10px;
                             
                             @media #{$desktop}, #{$laptop} {
-                                width: 100%;
+                                //width: 100%;
                                 //width: 20%;
+                                width: auto;
                             }
                         }
 
@@ -72,32 +74,46 @@ html {
                                 border-bottom: 0;    
                             }
                         }
+
+                        
+                    }
+
+                    li:nth-child(2) {
+                            margin-left: auto;
                     }
 
 
                     li {
+                        
                         display: none;
                         @media #{$desktop},#{$laptop} {
-                            display: inline;
-                            margin: 20px;
+                            display: block;
+                            //vertical-align: center;
                         }
                         font-size: 1.5em;
                         margin: 10px 0 10px 40px;
                         list-style: none;
-                        //margin-left: 40px;
+                        vertical-align: baseline;
                         &:hover {
                             @media #{$desktop} {
                                 border-bottom: 1px solid $white;    
                             }
                         }
 
-                        a {
+                        a, a:visited{
+                            display: block;
+                            color: $white;   
+                        }
 
-                            color: $white;
-
-                            &:visited {
-                                color: $white;
-                            }    
+                        &.current {
+                            @media #{$desktop}, #{$laptop} {
+                                border-bottom: 1px solid $white;    
+                            }
+                        }
+                        &:first-child.current {
+                            @media #{$desktop}, #{$laptop} {
+                                border-bottom-color: transparent;    
+                            }
                         }
                     }
                 }

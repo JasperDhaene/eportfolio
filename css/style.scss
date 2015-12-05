@@ -133,6 +133,17 @@ html {
                 font-size: 5em;
                 font-family: BlackoutInverse
             }
+
+            h2 {
+                
+                @media #{$desktop},#{$laptop} {
+                    display: none;  
+                }
+                font-size: 5em;
+                color: $white;
+                font-family: BlackoutInverse;
+                
+            }
             
             //about styling below
             > p{

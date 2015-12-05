@@ -7,69 +7,73 @@ html body header {
       html body header > nav {
         box-sizing: border-box;
         font-size: 1em;
-        text-align: right;
-        padding-right: 20px; } }
-    @media (min-width: 768px) and (max-width: 1280px) {
-      html body header > nav {
-        width: 70%; } }
+        display: block;
+        vertical-align: baseline; } }
     html body header > nav ul {
       padding: 10px 0; }
       @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
         html body header > nav ul {
           width: 100%;
           box-sizing: border-box;
-          font-size: 50%; } }
+          font-size: 50%;
+          display: flex;
+          flex-flow: row nowrap;
+          padding: 0 10px;
+          justify-content: flex-end;
+          align-self: flex-start;
+          vertical-align: baseline; } }
       html body header > nav ul li:first-child {
-        display: inline;
+        display: block;
         margin-left: 15px; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body header > nav ul li:first-child {
-            display: inline;
-            width: 60%;
             margin: 0 10px;
-            font-size: 3em; } }
+            font-size: 3em;
+            align-self: flex-start;
+            vertical-align: baseline; } }
         html body header > nav ul li:first-child i {
-          border: 1px solid #fff247;
-          width: 20px;
-          display: inline;
           box-sizing: border-box;
           color: #fff247;
           text-align: center; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body header > nav ul li:first-child i {
-              display: none;
-              visibility: hidden; } }
-        html body header > nav ul li:first-child h1 {
-          display: inline-block;
+              display: none; } }
+        html body header > nav ul li:first-child h6 {
           text-align: left;
           width: 70%;
           box-sizing: border-box;
           font-family: 'Droid Sans';
           letter-spacing: 2px;
-          color: #fff9ff;
-          padding-left: 10px; }
+          color: #fff9ff; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-            html body header > nav ul li:first-child h1 {
-              width: 100%; } }
+            html body header > nav ul li:first-child h6 {
+              width: auto; } }
         @media (min-width: 1280px) {
           html body header > nav ul li:first-child:hover {
             border-bottom: 0; } }
+      html body header > nav ul li:nth-child(2) {
+        margin-left: auto; }
       html body header > nav ul li {
         display: none;
         font-size: 1.5em;
         margin: 10px 0 10px 40px;
-        list-style: none; }
+        list-style: none;
+        vertical-align: baseline; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body header > nav ul li {
-            display: inline;
-            margin: 20px; } }
+            display: block; } }
         @media (min-width: 1280px) {
           html body header > nav ul li:hover {
             border-bottom: 1px solid #fff9ff; } }
-        html body header > nav ul li a {
+        html body header > nav ul li a, html body header > nav ul li a:visited {
+          display: block;
           color: #fff9ff; }
-          html body header > nav ul li a:visited {
-            color: #fff9ff; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header > nav ul li.current {
+            border-bottom: 1px solid #fff9ff; } }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body header > nav ul li:first-child.current {
+            border-bottom-color: transparent; } }
   html body header:hover nav li, html body header:focus nav li {
     display: block; }
     @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
@@ -326,6 +330,13 @@ html {
         font-family: BlackoutInverse; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body > main > h1 {
+            display: none; } }
+      html body > main h2 {
+        font-size: 5em;
+        color: #fff9ff;
+        font-family: BlackoutInverse; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body > main h2 {
             display: none; } }
       html body > main > p {
         padding: 0 5%; }
