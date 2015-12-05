@@ -7,7 +7,10 @@ html {
         
         > main { //CONTENT SECTION
             
+            
             .project {
+                color: $white;
+                
                 display: flex;
                 flex-direction: column;
                 text-align: center;
