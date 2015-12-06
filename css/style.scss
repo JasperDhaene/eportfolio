@@ -29,6 +29,7 @@ $margin-lg: 30px;
 @import 'contact';
 @import 'hobbies';
 @import 'portfolio';
+@import 'links';
 
 html {
     height: 100%;
@@ -41,7 +42,7 @@ html {
         background-color: $black;
         //background-image: url(../images/background_small.jpg);
         //background-image: url(../images/hue1.png);
-//      background-image: url(../images/bg5.jpeg);
+        background-image: url(../images/bg3.jpeg);
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -119,11 +120,12 @@ html {
                 padding: 0 5%;
             }
 
-            div.pictureText {
+            section {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                margin: 0 $margin-lg;
                 picture {
                     flex: 1;
                     
@@ -138,8 +140,7 @@ html {
                 section {
                     display: flex;
                     flex: 3;
-                    flex-direction: row;
-                    //justify-content: space-between;
+                    flex-direction: column;
                     padding: 0 $padding-lg;
                     margin: $margin-sm $margin-lg;
                     p {
@@ -150,7 +151,7 @@ html {
             }
 
             i, i:visited {
-                color: $primary_text_color;
+                color: $black;
             }
             i:hover {
                 color: $yellow;
@@ -160,6 +161,12 @@ html {
                 text-align: center;
                 margin: $margin-sm $margin-lg;
             }
+
+            div#pushdown_dummy {
+                //height: 150%;
+            }
+
+            
 
             
         }

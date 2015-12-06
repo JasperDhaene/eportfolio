@@ -20,7 +20,9 @@ html {
                         display: flex;
                         flex: 3;
                         flex-direction: column;
-                        justify-content: space-around;                                       text-align: left;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        text-align: left;
                         
                         h4 {
                             flex: 1;

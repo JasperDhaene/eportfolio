@@ -7,20 +7,11 @@ html {
         
         > main#portfolio { //CONTENT SECTION
             display: block;
+            //overflow: hidden;
             
-            .project {
-                color: $primary_text_color;
-                
-                display: flex;
-                flex-direction: column;
-                text-align: center;
+            section.project {           
                 margin: 5% 0;
-                
-                @media #{$desktop}, #{$laptop} {
-                    flex-direction: row;
-                }
-                
-                
+                              
                 picture {
                     flex: 1;
                         img {
@@ -29,17 +20,23 @@ html {
                         }
                 }
                 
-                .description {
-                    display: flex;
-                    flex-direction: column;
+                section.description {
+                    
                     flex: 2;
-                    text-align: left;
+                    align-items: flex-start;
+                    
                     h4 {
                         flex: 1;
                     }
                     p{
                         margin: 10px 0;
                         flex: 2;
+                    }
+                    i {
+                        color: $white;
+                    }
+                    i:hover {
+                        color: $yellow;
                     }
                 }
             }
