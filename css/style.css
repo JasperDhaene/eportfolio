@@ -142,60 +142,17 @@ html body footer {
         html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
           border-color: #CC181E;
           color: #CC181E; } }
+html body footer#homepage {
+  margin-top: 30%; }
 
-@font-face {
-  font-family: 'AlexBrush';
-  src: url("../fonts/AlexBrush-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Allura';
-  src: url("../fonts/Allura-Regular.otf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Daniel';
-  src: url("../fonts/daniel.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Blackout';
-  src: url("../fonts/Blackout-Midnight.ttf");
-  font-weight: normal;
-  font-style: normal; }
 @font-face {
   font-family: 'BlackoutInverse';
   src: url("../fonts/Blackout-2am.ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Goodfoot';
-  src: url("../fonts/goodfoot.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Blokletters-Balpen';
-  src: url("../fonts/Blokletters-Balpen.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Hetilica';
-  src: url("../fonts/hetilica.ttf");
-  font-weight: normal;
-  font-style: bold; }
-@font-face {
   font-family: 'WC';
   src: url("../fonts/WCManoNegraBta.otf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Scratch';
-  src: url("../fonts/Scratch.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'NovitoNova';
-  src: url("../fonts/NovitoNova-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 html body > main form {
@@ -254,7 +211,6 @@ html body > main ul {
   list-style: none; }
   html body > main ul li {
     display: flex;
-    height: 100%;
     margin: 30px 0;
     flex-direction: column;
     align-items: center; }
@@ -333,11 +289,10 @@ html {
     height: 100%;
     font-family: 'Nunito','Droid Sans', sans-serif;
     background-color: #111111;
-    background-image: url(../images/bg3.jpeg);
+    background-image: url(../images/background.jpeg);
     background-repeat: no-repeat; }
     @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body {
-        background-image: url(../images/background9.jpg);
         background-size: cover; } }
     html body a, html body a:visited {
       color: inherit;
@@ -354,11 +309,14 @@ html {
           align-items: center; } }
       html body > main h1 {
         font-family: 'WC';
-        font-size: 4em; }
+        font-size: 3em;
+        text-align: center;
+        align-self: center; }
         @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body > main h1 {
             display: block;
-            font-size: 7em; } }
+            font-size: 7em;
+            margin-top: 50px; } }
       html body > main h2 {
         font-size: 5em;
         color: #fff9ff;
@@ -412,9 +370,14 @@ html {
         text-align: center;
         margin: 10px 30px; }
     html body main#homepage h1 {
-      flex: 1; }
+      display: none; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body main#homepage h1 {
+          flex: 1;
+          display: block; } }
     html body main#homepage h2 {
-      flex: 2; }
+      flex: 2;
+      align-self: center; }
       @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body main#homepage h2 {
           display: block; } }

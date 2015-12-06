@@ -1,10 +1,8 @@
 /* Variables */
 $black: #111111;
 $white: #fff9ff;
-$gray: #e4e0e5;
 $purple: #392a6d;
-$green: #033;
-$yellow: #fff247;// //fff9ff
+$yellow: #fff247;
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
 $github-gray: #666161;
@@ -12,12 +10,7 @@ $github-black: #252323;
 $background-black: #222428;
 $primary_text_color: #fff9ff;
 
-
-$font: Helvetica,Arial,sans-serif;
-
-$tablet: "(min-width: 481px) and (max-width: 768px)";
 $laptop: "(min-width: 769px) and (max-width: 1366px)";
-
 $desktop: "(min-width: 1366px)";
 
 $padding-lg: 30px;
@@ -41,16 +34,15 @@ html {
         
         
         background-color: $black;
-        background-image: url(../images/bg3.jpeg);
+        background-image: url(../images/background.jpeg);
         background-repeat: no-repeat;
         
         
         @media #{$desktop},#{$laptop}  {
-            background-image: url(../images/background9.jpg);
             background-size: cover;
         }
 
-        a, a:visited { //TODO find other place
+        a, a:visited {
             color: inherit;
             text-decoration: none;
         }
@@ -78,10 +70,13 @@ html {
                         
             h1 {
                 font-family: 'WC';
-                font-size: 4em;
+                font-size: 3em;
+                text-align: center;
+                align-self: center;
                 @media #{$desktop},#{$laptop} {
                     display: block;  
                     font-size: 7em;
+                    margin-top: 50px;
                 }  
             }
 
@@ -100,7 +95,7 @@ html {
                 font-size: 5em;
                 text-align: center;
                 color: $purple;
-                margin-bottom: 30px;
+                margin-bottom: $margin_lg;
             } 
 
             h4 {
@@ -120,7 +115,6 @@ html {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                
                 margin: 0 $margin-lg;
                 
                 @media #{$desktop},#{$laptop} {
@@ -165,23 +159,27 @@ html {
             section {
                 text-align: center;
                 margin: $margin-sm $margin-lg;
-            }
-
-            
-            
+            }   
             
         }
 
         main#homepage { 
             h1 {
-                flex: 1;
+                display: none;
+                @media #{$desktop},#{$laptop} {
+                    flex: 1;
+                    display: block;  
+                }                
             }
             h2 {
                 flex: 2;
+                align-self: center;
                 @media #{$desktop},#{$laptop} {
                     display: block;  
                 }                
-            } 
+            }
+
+            
         }
         
         .dl_button {
