@@ -398,12 +398,17 @@ html {
       @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body main#homepage h2 {
           display: block; } }
-    html body .form-control {
+    html body .dl_button {
+      text-align: center;
       border: 1px solid #111111;
-      border-radius: .15em;
+      border-radius: 5px;
+      width: 60%;
       padding: 5px;
-      margin-top: 10px;
+      margin: 20px auto 0 auto;
       background: white;
       color: #111111; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body .dl_button {
+          width: 20%; } }
 
 /*# sourceMappingURL=style.css.map */
