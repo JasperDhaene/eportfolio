@@ -52,10 +52,20 @@ html {
                 
                 @media #{$desktop}, #{$laptop} {
                     width: 50%;
-                    border-color: $primary_text_color;
-                    color: $primary_text_color;
                     
-                    
+                    &:nth-child(1) {
+                        border-color: $primary_text_color;
+                        color: $primary_text_color;
+                    }
+                    &:nth-child(2) {
+                        border-color: $primary_text_color;
+                        color: $primary_text_color;
+                    }
+                    &:nth-child(3) {
+                        border-color: $primary_text_color;
+                        color: $primary_text_color;
+                    }
+                    // HOVER
                     &:nth-child(1):hover {
                         border-color: $facebook-blue;
                         color: $facebook-blue;
