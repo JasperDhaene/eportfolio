@@ -1,13 +1,24 @@
 html {
     body {
-
+        
         header {
             //see _header.scss
         }
         
         > main#portfolio { //CONTENT SECTION
+            
+            
             display: block;
             //overflow: hidden;
+            
+            > p {
+                padding: 25% 0;
+                //height: 50%;
+                width: auto;
+                text-align: center;
+                //padding-top: 75%;
+                margin: 0 auto 40% auto;
+            }
             
             section.project {           
                 margin: 5% 0;

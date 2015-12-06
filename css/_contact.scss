@@ -8,11 +8,11 @@ html {
             
             form {
                 padding: 0 10%;
-                @media #{$desktop} {
+                @media #{$desktop}, #{$laptop} {
                     padding: 10% 30%;
+                    width: 50%;
                 }
             
-                width: 50%;
                 
                 
                 input[type=submit] {

@@ -32,27 +32,31 @@ html body header {
             align-self: flex-start;
             vertical-align: baseline; } }
         html body header > nav ul li:first-child i {
+          display: inline;
           box-sizing: border-box;
           color: #fff247;
-          text-align: center; }
+          text-align: right; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body header > nav ul li:first-child i {
               display: none; } }
         html body header > nav ul li:first-child h6 {
           text-align: left;
-          width: 70%;
+          display: inline;
           box-sizing: border-box;
           font-family: 'Droid Sans';
-          letter-spacing: 2px;
-          color: #fff9ff; }
+          color: #fff9ff;
+          margin-right: 30%; }
+          html body header > nav ul li:first-child h6 a {
+            display: inline; }
           @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
             html body header > nav ul li:first-child h6 {
               width: auto; } }
         @media (min-width: 1280px) {
           html body header > nav ul li:first-child:hover {
             border-bottom: 0; } }
-      html body header > nav ul li:nth-child(2) {
-        margin-left: auto; }
+      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        html body header > nav ul li:nth-child(2) {
+          margin-left: auto; } }
       html body header > nav ul li {
         display: none;
         font-size: 1.5em;
@@ -89,12 +93,14 @@ html body footer {
   justify-content: space-around;
   align-items: center;
   position: static;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 50%; }
   @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
     html body footer {
       position: absolute;
       flex-direction: row;
-      height: 10%; } }
+      height: 10%;
+      margin-top: 0; } }
   html body footer a, html body footer a:visited {
     box-sizing: border-box;
     border: 3px solid #fff9ff;
@@ -103,15 +109,28 @@ html body footer {
     width: 60%;
     text-align: center;
     color: #fff9ff; }
-    html body footer a:nth-child(1):hover, html body footer a:visited:nth-child(1):hover {
+    html body footer a:nth-child(1), html body footer a:visited:nth-child(1) {
       border-color: #3B5998;
       color: #3B5998; }
-    html body footer a:nth-child(2):hover, html body footer a:visited:nth-child(2):hover {
+    html body footer a:nth-child(2), html body footer a:visited:nth-child(2) {
       border-color: #3f3c3c;
       color: #3f3c3c; }
-    html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
+    html body footer a:nth-child(3), html body footer a:visited:nth-child(3) {
       border-color: #CC181E;
       color: #CC181E; }
+    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      html body footer a, html body footer a:visited {
+        border-color: #fff9ff;
+        color: #fff9ff; }
+        html body footer a:nth-child(1):hover, html body footer a:visited:nth-child(1):hover {
+          border-color: #3B5998;
+          color: #3B5998; }
+        html body footer a:nth-child(2):hover, html body footer a:visited:nth-child(2):hover {
+          border-color: #3f3c3c;
+          color: #3f3c3c; }
+        html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
+          border-color: #CC181E;
+          color: #CC181E; } }
 
 @font-face {
   font-family: 'AlexBrush';
@@ -169,11 +188,11 @@ html body footer {
   font-weight: normal;
   font-style: normal; }
 html body > main form {
-  padding: 0 10%;
-  width: 50%; }
-  @media (min-width: 1280px) {
+  padding: 0 10%; }
+  @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
     html body > main form {
-      padding: 10% 30%; } }
+      padding: 10% 30%;
+      width: 50%; } }
   html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
     display: block;
     font-size: 1.5em;
@@ -215,14 +234,20 @@ html body > main ul {
   html body > main ul li {
     display: flex;
     height: 100%;
-    margin: 30px 0; }
+    margin: 30px 0;
+    flex-direction: column;
+    align-items: center; }
     html body > main ul li section {
       display: flex;
       flex: 3;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      text-align: left; }
+      align-items: center;
+      text-align: center; }
+      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        html body > main ul li section {
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          text-align: left; } }
       html body > main ul li section h4 {
         flex: 1;
         font-size: 2em; }
@@ -243,6 +268,11 @@ html body > main ul {
 
 html body > main#portfolio {
   display: block; }
+  html body > main#portfolio > p {
+    padding: 25% 0;
+    width: auto;
+    text-align: center;
+    margin: 0 auto 40% auto; }
   html body > main#portfolio section.project {
     margin: 5% 0; }
     html body > main#portfolio section.project picture {
@@ -273,22 +303,24 @@ html {
     font-family: 'Nunito','Droid Sans', sans-serif;
     background-color: #111111;
     background-image: url(../images/bg3.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media (min-width: 1280px) {
+    background-repeat: no-repeat; }
+    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
       html body {
-        background-image: url(../images/bg6.jpeg); } }
+        background-image: url(../images/bg6.jpeg);
+        background-size: cover; } }
     html body a, html body a:visited {
       color: inherit;
       text-decoration: none; }
     html body > main {
       width: 100%;
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       color: #fff9ff; }
+      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        html body > main {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
       html body > main h1 {
         font-family: 'WC';
         font-size: 4em; }
@@ -314,14 +346,20 @@ html {
         font-size: 2em; }
       html body > main h5 {
         color: #3B5998; }
+      html body > main h6 {
+        display: inline;
+        padding: 0; }
       html body > main > p {
         padding: 0 5%; }
       html body > main section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
         margin: 0 30px; }
+        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          html body > main section {
+            flex-direction: row;
+            align-items: center; } }
         html body > main section picture {
           flex: 1; }
           html body > main section picture img {
@@ -345,6 +383,8 @@ html {
       html body > main section {
         text-align: center;
         margin: 10px 30px; }
+      html body > main div#pushdown_dummy {
+        height: 150%; }
     html body main#homepage h1 {
       flex: 1; }
     html body main#homepage h2 {
