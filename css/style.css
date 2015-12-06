@@ -43,7 +43,6 @@ html body header {
           text-align: left;
           display: inline;
           box-sizing: border-box;
-          font-family: 'Droid Sans';
           color: #fff9ff;
           margin-right: 30%; }
           html body header > nav ul li:first-child h6 a {
