@@ -7,17 +7,16 @@ html {
         
         > main#portfolio { //CONTENT SECTION
             
-            
             display: block;
-            //overflow: hidden;
             
             > p {
-                padding: 25% 0;
-                //height: 50%;
                 width: auto;
                 text-align: center;
-                //padding-top: 75%;
                 margin: 0 auto 40% auto;
+                
+                @media #{$desktop}, #{$laptop} {
+                    padding: 15% 0;
+                }
             }
             
             section.project {           
@@ -35,7 +34,7 @@ html {
                     
                     flex: 2;
                     align-items: flex-start;
-                    
+                    text-align: left;
                     h4 {
                         flex: 1;
                     }

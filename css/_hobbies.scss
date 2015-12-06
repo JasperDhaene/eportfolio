@@ -17,6 +17,10 @@ html {
                     margin: 30px 0;
                     flex-direction: column;
                     align-items: center;
+                    
+                    @media #{$desktop}, #{$laptop} {
+                        flex-direction: row;
+                    }
  
                     section {
                         display: flex;

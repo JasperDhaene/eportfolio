@@ -15,9 +15,9 @@ $primary_text_color: #fff9ff;
 $font: Helvetica,Arial,sans-serif;
 
 $tablet: "(min-width: 481px) and (max-width: 768px)";
-$laptop: "(min-width: 768px) and (max-width: 1280px)";
+$laptop: "(min-width: 769px) and (max-width: 1366px)";
 
-$desktop: "(min-width: 1280px)";
+$desktop: "(min-width: 1366px)";
 
 $padding-lg: 30px;
 $margin-sm: 10px;
@@ -51,7 +51,7 @@ html {
             //background-image: url(../hue/26.png);
             //background-image: url(../hue/28.png);
             //background-image: url(../hue/43-Black%20Sands.png);
-            background-image: url(../images/bg6.jpeg);
+            background-image: url(../images/bg3.jpeg);
             background-size: cover;
         }
 
@@ -118,8 +118,7 @@ html {
             }
 
             h6 {
-                display: inline;
-                padding: 0;
+                
             }
             
             //about styling below
@@ -175,9 +174,7 @@ html {
                 margin: $margin-sm $margin-lg;
             }
 
-            div#pushdown_dummy {
-                height: 150%;
-            }
+            
             
             
         }

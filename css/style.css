@@ -3,7 +3,7 @@ html body header {
   width: 100%; }
   html body header > nav {
     background-color: rgba(255, 255, 255, 0.1); }
-    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body header > nav {
         box-sizing: border-box;
         font-size: 1em;
@@ -11,7 +11,7 @@ html body header {
         vertical-align: baseline; } }
     html body header > nav ul {
       padding: 10px 0; }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body header > nav ul {
           width: 100%;
           box-sizing: border-box;
@@ -25,7 +25,7 @@ html body header {
       html body header > nav ul li:first-child {
         display: block;
         margin-left: 15px; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body header > nav ul li:first-child {
             margin: 0 10px;
             font-size: 3em;
@@ -36,7 +36,7 @@ html body header {
           box-sizing: border-box;
           color: #fff247;
           text-align: right; }
-          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+          @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
             html body header > nav ul li:first-child i {
               display: none; } }
         html body header > nav ul li:first-child h6 {
@@ -48,13 +48,17 @@ html body header {
           margin-right: 30%; }
           html body header > nav ul li:first-child h6 a {
             display: inline; }
-          @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+            @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+              html body header > nav ul li:first-child h6 a {
+                display: block; } }
+          @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
             html body header > nav ul li:first-child h6 {
-              width: auto; } }
-        @media (min-width: 1280px) {
+              width: auto;
+              margin-right: 0; } }
+        @media (min-width: 1366px) {
           html body header > nav ul li:first-child:hover {
             border-bottom: 0; } }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body header > nav ul li:nth-child(2) {
           margin-left: auto; } }
       html body header > nav ul li {
@@ -63,31 +67,31 @@ html body header {
         margin: 10px 0 10px 40px;
         list-style: none;
         vertical-align: baseline; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body header > nav ul li {
             display: block; } }
-        @media (min-width: 1280px) {
+        @media (min-width: 1366px) {
           html body header > nav ul li:hover {
             border-bottom: 1px solid #fff9ff; } }
         html body header > nav ul li a, html body header > nav ul li a:visited {
           display: block;
           color: #fff9ff; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body header > nav ul li.current {
             border-bottom: 1px solid #fff9ff; } }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body header > nav ul li:first-child.current {
             border-bottom-color: transparent; } }
   html body header:hover nav li, html body header:focus nav li {
     display: block; }
-    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body header:hover nav li, html body header:focus nav li {
         display: inline; } }
 
 html body footer {
   bottom: 0;
   height: 2em;
-  font-size: 2em;
+  font-size: 1.5em;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -95,7 +99,7 @@ html body footer {
   position: static;
   flex-direction: column;
   margin-top: 50%; }
-  @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+  @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
     html body footer {
       position: absolute;
       flex-direction: row;
@@ -106,7 +110,7 @@ html body footer {
     border: 3px solid #fff9ff;
     border-radius: 20px;
     margin: 10px 10%;
-    width: 60%;
+    width: 40%;
     text-align: center;
     color: #fff9ff; }
     html body footer a:nth-child(1), html body footer a:visited:nth-child(1) {
@@ -118,8 +122,9 @@ html body footer {
     html body footer a:nth-child(3), html body footer a:visited:nth-child(3) {
       border-color: #CC181E;
       color: #CC181E; }
-    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body footer a, html body footer a:visited {
+        width: 50%;
         border-color: #fff9ff;
         color: #fff9ff; }
         html body footer a:nth-child(1):hover, html body footer a:visited:nth-child(1):hover {
@@ -189,7 +194,7 @@ html body footer {
   font-style: normal; }
 html body > main form {
   padding: 0 10%; }
-  @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+  @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
     html body > main form {
       padding: 10% 30%;
       width: 50%; } }
@@ -237,12 +242,15 @@ html body > main ul {
     margin: 30px 0;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body > main ul li {
+        flex-direction: row; } }
     html body > main ul li section {
       display: flex;
       flex: 3;
       align-items: center;
       text-align: center; }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body > main ul li section {
           flex-direction: column;
           justify-content: space-around;
@@ -269,10 +277,12 @@ html body > main ul {
 html body > main#portfolio {
   display: block; }
   html body > main#portfolio > p {
-    padding: 25% 0;
     width: auto;
     text-align: center;
     margin: 0 auto 40% auto; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body > main#portfolio > p {
+        padding: 15% 0; } }
   html body > main#portfolio section.project {
     margin: 5% 0; }
     html body > main#portfolio section.project picture {
@@ -282,7 +292,8 @@ html body > main#portfolio {
         border-radius: 0px; }
     html body > main#portfolio section.project section.description {
       flex: 2;
-      align-items: flex-start; }
+      align-items: flex-start;
+      text-align: left; }
       html body > main#portfolio section.project section.description h4 {
         flex: 1; }
       html body > main#portfolio section.project section.description p {
@@ -304,9 +315,9 @@ html {
     background-color: #111111;
     background-image: url(../images/bg3.jpeg);
     background-repeat: no-repeat; }
-    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body {
-        background-image: url(../images/bg6.jpeg);
+        background-image: url(../images/bg3.jpeg);
         background-size: cover; } }
     html body a, html body a:visited {
       color: inherit;
@@ -314,7 +325,7 @@ html {
     html body > main {
       width: 100%;
       color: #fff9ff; }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body > main {
           height: 90%;
           display: flex;
@@ -324,7 +335,7 @@ html {
       html body > main h1 {
         font-family: 'WC';
         font-size: 4em; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body > main h1 {
             display: block;
             font-size: 7em; } }
@@ -333,7 +344,7 @@ html {
         color: #fff9ff;
         font-family: BlackoutInverse;
         text-align: center; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body > main h2 {
             display: none; } }
       html body > main h3 {
@@ -346,9 +357,6 @@ html {
         font-size: 2em; }
       html body > main h5 {
         color: #3B5998; }
-      html body > main h6 {
-        display: inline;
-        padding: 0; }
       html body > main > p {
         padding: 0 5%; }
       html body > main section {
@@ -356,7 +364,7 @@ html {
         flex-direction: column;
         justify-content: center;
         margin: 0 30px; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
           html body > main section {
             flex-direction: row;
             align-items: center; } }
@@ -383,13 +391,11 @@ html {
       html body > main section {
         text-align: center;
         margin: 10px 30px; }
-      html body > main div#pushdown_dummy {
-        height: 150%; }
     html body main#homepage h1 {
       flex: 1; }
     html body main#homepage h2 {
       flex: 2; }
-      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
         html body main#homepage h2 {
           display: block; } }
     html body .form-control {

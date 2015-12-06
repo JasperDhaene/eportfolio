@@ -58,10 +58,14 @@ html {
                             a{
                                 //width: 80%;
                                 display: inline;
+                                @media #{$desktop}, #{$laptop} {
+                                    display: block;
+                                }
                             }
                             
                             @media #{$desktop}, #{$laptop} {
                                 width: auto;
+                                margin-right: 0;
                             }
                         }
 

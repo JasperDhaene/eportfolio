@@ -11,7 +11,7 @@ html {
         footer {
             bottom: 0;
             height: 2em;
-            font-size: 2em;
+            font-size: 1.5em;
             width: 100%;
             display: flex;
             justify-content: space-around;
@@ -33,10 +33,10 @@ html {
                 border: 3px solid $white;
                 border-radius: 20px;
                 margin: 10px 10%;
-                width: 60%;
+                width: 40%;
                 text-align: center;
                 color: $primary_text_color;
-                
+
                 &:nth-child(1) {
                     border-color: $facebook-blue;
                     color: $facebook-blue;
@@ -51,7 +51,7 @@ html {
                 }
                 
                 @media #{$desktop}, #{$laptop} {
-                    
+                    width: 50%;
                     border-color: $primary_text_color;
                     color: $primary_text_color;
                     
