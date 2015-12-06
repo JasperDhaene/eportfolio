@@ -279,7 +279,7 @@ html body > main#portfolio {
   html body > main#portfolio > p {
     width: auto;
     text-align: center;
-    margin: 0 auto 40% auto; }
+    margin: 0 auto 20% auto; }
     @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body > main#portfolio > p {
         padding: 15% 0; } }
