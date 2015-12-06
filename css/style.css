@@ -95,7 +95,7 @@ html body footer {
       position: absolute;
       flex-direction: row;
       height: 10%; } }
-  html body footer a {
+  html body footer a, html body footer a:visited {
     box-sizing: border-box;
     border: 3px solid #fff9ff;
     border-radius: 20px;
@@ -103,13 +103,13 @@ html body footer {
     width: 60%;
     text-align: center;
     color: #fff9ff; }
-    html body footer a:nth-child(1):hover {
+    html body footer a:nth-child(1):hover, html body footer a:visited:nth-child(1):hover {
       border-color: #3B5998;
       color: #3B5998; }
-    html body footer a:nth-child(2):hover {
+    html body footer a:nth-child(2):hover, html body footer a:visited:nth-child(2):hover {
       border-color: #3f3c3c;
       color: #3f3c3c; }
-    html body footer a:nth-child(3):hover {
+    html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
       border-color: #CC181E;
       color: #CC181E; }
 
@@ -190,20 +190,19 @@ html body > main form {
     margin: 10px auto 30px auto;
     text-align: left;
     font-weight: normal;
-    color: #111111;
     background-color: transparent;
     border-radius: 0;
     border-width: 0 0 1px 0;
     border-bottom-color: #fff9ff;
     width: 100%; }
   html body > main form textarea {
-    height: 800%; }
+    min-height: 4em; }
   html body > main form input[type=submit]:hover, html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
     background-color: #fff9ff;
     color: #392a6d; }
   html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
     background-color: transparent;
-    color: #111111; }
+    color: #fff9ff; }
   html body > main form input:focus, html body > main form textarea:focus, html body > main form input:active, html body > main form textarea:active {
     outline: 0;
     border-bottom-color: #fff9ff;
@@ -211,8 +210,7 @@ html body > main form {
 
 html body > main ul {
   padding: 0 30px;
-  list-style: none;
-  text-align: left; }
+  list-style: none; }
   html body > main ul li {
     display: flex;
     height: 100%;
@@ -221,7 +219,8 @@ html body > main ul {
       display: flex;
       flex: 3;
       flex-direction: column;
-      justify-content: space-around; }
+      justify-content: space-around;
+      text-align: left; }
       html body > main ul li section h4 {
         flex: 1;
         font-size: 2em; }
@@ -240,37 +239,32 @@ html body > main ul {
         margin-bottom: 5%;
         border-radius: 50%; }
 
-html body > main .project {
-  color: #fff9ff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 5% 0; }
-  @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-    html body > main .project {
-      flex-direction: row; } }
-  html body > main .project picture {
-    flex: 1; }
-    html body > main .project picture img {
-      border: 0px;
-      border-radius: 0px; }
-  html body > main .project .description {
+html body > main#portfolio {
+  display: block; }
+  html body > main#portfolio .project {
+    color: #fff9ff;
     display: flex;
     flex-direction: column;
-    flex: 2;
-    text-align: left; }
-    html body > main .project .description h3 {
-      flex: 1;
-      font-size: 2em;
-      margin: 10px 0; }
-    html body > main .project .description p {
-      margin: 10px 0;
-      flex: 2; }
-html body > main > h2 {
-  font-size: 5em;
-  text-align: center;
-  color: #392a6d;
-  margin-bottom: 30px; }
+    text-align: center;
+    margin: 5% 0; }
+    @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+      html body > main#portfolio .project {
+        flex-direction: row; } }
+    html body > main#portfolio .project picture {
+      flex: 1; }
+      html body > main#portfolio .project picture img {
+        border: 0px;
+        border-radius: 0px; }
+    html body > main#portfolio .project .description {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      text-align: left; }
+      html body > main#portfolio .project .description h4 {
+        flex: 1; }
+      html body > main#portfolio .project .description p {
+        margin: 10px 0;
+        flex: 2; }
 
 html {
   height: 100%; }
@@ -283,59 +277,42 @@ html {
     @media (min-width: 1280px) {
       html body {
         background-image: url(../images/bg6.jpeg); } }
-    html body a {
+    html body a, html body a:visited {
+      color: inherit;
       text-decoration: none; }
-    html body > main#homepage {
+    html body > main {
       width: 100%;
-      overflow: auto;
+      height: 90%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #fff9ff;
-      text-align: center; }
-      html body > main#homepage h1 {
-        flex: 1;
+      color: #fff9ff; }
+      html body > main h1 {
         font-family: 'WC';
         font-size: 4em; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > main#homepage h1 {
+          html body > main h1 {
             display: block;
             font-size: 7em; } }
-      html body > main#homepage h2 {
-        flex: 2;
-        font-size: 5em;
-        color: #fff9ff;
-        font-family: BlackoutInverse; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > main#homepage h2 {
-            display: block; } }
-    html body > main#portfolio {
-      color: #111111; }
-    html body > main {
-      width: 100%;
-      color: #fff9ff;
-      text-align: center;
-      padding-top: 5%;
-      height: 90%; }
-      html body > main > h1 {
-        font-size: 5em;
-        font-family: BlackoutInverse; }
-        @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
-          html body > main > h1 {
-            display: none; } }
       html body > main h2 {
         font-size: 5em;
         color: #fff9ff;
-        font-family: BlackoutInverse; }
+        font-family: BlackoutInverse;
+        text-align: center; }
         @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
           html body > main h2 {
             display: none; } }
-      html body > main h4 a, html body > main h4 a:hover, html body > main h4 a:visited {
-        color: #392a6d; }
-      html body > main section {
-        margin: 10px 30px;
-        text-align: left; }
+      html body > main h3 {
+        font-size: 5em;
+        text-align: center;
+        color: #392a6d;
+        margin-bottom: 30px; }
+      html body > main h4 {
+        color: #fff247;
+        font-size: 2em; }
+      html body > main h5 {
+        color: #3B5998; }
       html body > main > p {
         padding: 0 5%; }
       html body > main div.pictureText {
@@ -354,10 +331,25 @@ html {
           display: flex;
           flex: 3;
           flex-direction: row;
-          padding: 0 30px; }
+          padding: 0 30px;
+          margin: 10px 30px; }
           html body > main div.pictureText section p {
             flex: 1;
             text-align: left; }
+      html body > main i, html body > main i:visited {
+        color: #fff9ff; }
+      html body > main i:hover {
+        color: #fff247; }
+      html body > main section {
+        text-align: center;
+        margin: 10px 30px; }
+    html body main#homepage h1 {
+      flex: 1; }
+    html body main#homepage h2 {
+      flex: 2; }
+      @media (min-width: 1280px), (min-width: 768px) and (max-width: 1280px) {
+        html body main#homepage h2 {
+          display: block; } }
     html body .form-control {
       border: 1px solid #111111;
       border-radius: .15em;

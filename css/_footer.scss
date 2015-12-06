@@ -25,17 +25,15 @@ html {
                 flex-direction: row;
                 height: 10%;
             }
-            a {
+            a, a:visited {
                 
-                //display: block;
                 box-sizing: border-box;
                 border: 3px solid $white;
                 border-radius: 20px;
-                //padding: 5px;
                 margin: 10px 10%;
                 width: 60%;
                 text-align: center;
-                color: $white;
+                color: $primary_text_color;
                 
                 &:nth-child(1):hover {
                     border-color: $facebook-blue;

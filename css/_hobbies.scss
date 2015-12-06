@@ -8,9 +8,9 @@ html {
         > main { //CONTENT SECTION
 
             ul {
-                padding: 0 30px;
+                padding: 0 $padding-lg;
                 list-style: none;
-                text-align: left;
+
                 li {
                     display: flex;
                     height: 100%;
@@ -20,7 +20,7 @@ html {
                         display: flex;
                         flex: 3;
                         flex-direction: column;
-                        justify-content: space-around;                        
+                        justify-content: space-around;                                       text-align: left;
                         
                         h4 {
                             flex: 1;

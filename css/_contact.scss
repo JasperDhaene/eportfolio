@@ -21,7 +21,7 @@ html {
                     box-sizing: border-box;
                     font-weight: bold;
                     background: $purple;
-                    color: $white;
+                    color: $primary_text_color;
                     border: 2px solid $black;
                     border-radius: 10px;
                     text-align: center;
@@ -33,7 +33,6 @@ html {
                     margin: 10px auto 30px auto;
                     text-align: left;
                     font-weight: normal;
-                    color: $black;
                     background-color: transparent;
                     border-radius: 0;
                     border-width: 0 0 1px 0; 
@@ -43,7 +42,7 @@ html {
 
                 textarea{
                     @extend input[type=text];
-                    height: 800%;
+                    min-height: 4em;
                 }
 
                 input[type=submit]:hover {
@@ -53,7 +52,7 @@ html {
 
                 input[type=text]:hover, input[type=email]:hover {
                     background-color: transparent;
-                    color: $black;
+                    color: $primary_text_color;
                 }
 
 

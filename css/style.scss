@@ -9,6 +9,7 @@ $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
 $github-gray: #3f3c3c;
 $background-black: #222428;
+$primary_text_color: #fff9ff;
 
 
 $font: Helvetica,Arial,sans-serif;
@@ -17,6 +18,10 @@ $tablet: "(min-width: 481px) and (max-width: 768px)";
 $laptop: "(min-width: 768px) and (max-width: 1280px)";
 
 $desktop: "(min-width: 1280px)";
+
+$padding-lg: 30px;
+$margin-sm: 10px;
+$margin-lg: 30px;
 
 @import 'header';
 @import 'footer';
@@ -48,7 +53,8 @@ html {
             background-image: url(../images/bg6.jpeg);
         }
 
-        a { //TODO find other place
+        a, a:visited { //TODO find other place
+            color: inherit;
             text-decoration: none;
         }
     
@@ -56,90 +62,56 @@ html {
             //see _header.scss
         }
         
-        > main#homepage { //CONTENT SECTION HOMEPAGE | TODO: merge
+        
+        
+        > main { //CONTENT SECTION
             width: 100%;
-            overflow: auto;
+            height: 90%;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: $white;
-            text-align: center;
-            //margin-top: 10%;
-            
+            color: $primary_text_color;
+                        
             h1 {
-                flex: 1;
-                //font-family: 'WC', cursive;
-                //font-family: 'Goodfoot';
                 font-family: 'WC';
                 font-size: 4em;
-                //margin-top: 20px;
                 @media #{$desktop},#{$laptop} {
                     display: block;  
                     font-size: 7em;
-
-                }
-                
-                
+                }  
             }
-            
+
             h2 {
-                flex: 2;
-                @media #{$desktop},#{$laptop} {
-                    display: block;  
-                }
                 font-size: 5em;
-                color: $white;
+                color: $primary_text_color;
                 font-family: BlackoutInverse;
-                
-            }
-            
-            
-        }
-        > main#portfolio {
-            //background-color: rgba(255,255,255,0.8);
-            color: $black;
-        }
-        
-        > main { //CONTENT SECTION
-            width: 100%;
-            //overflow: auto;            
-            color: $white;
-            text-align: center;
-            padding-top: 5%;
-            height: 90%;
-
-            
-            > h1 {
-                @media #{$desktop},#{$laptop} {
-                    display: none;  
-                }
-                font-size: 5em;
-                font-family: BlackoutInverse
-            }
-
-            h2 {
+                text-align: center;
                 
                 @media #{$desktop},#{$laptop} {
                     display: none;  
                 }
-                font-size: 5em;
-                color: $white;
-                font-family: BlackoutInverse;
-                
             }
+
+            h3 {
+                font-size: 5em;
+                text-align: center;
+                color: $purple;
+                margin-bottom: 30px;
+            } 
 
             h4 {
-                a, a:hover, a:visited {
-                    color: $purple;
-                }
-                
+                color: $yellow;
+                font-size: 2em;
             }
 
-            section {
-                margin: 10px 30px;
+            h5 {
+                color: $facebook-blue;
+            }
+
+            h6 {
                 
-                text-align: left;
             }
             
             //about styling below
@@ -161,10 +133,6 @@ html {
                         margin-bottom: 2%;
                         border-radius: 50%;
 
-                        @media #{$desktop},#{$laptop} {
-                            //margin-top: 30px;
-                        }
-
                     }
                 }
                 section {
@@ -172,14 +140,40 @@ html {
                     flex: 3;
                     flex-direction: row;
                     //justify-content: space-between;
-                    padding: 0 30px;
+                    padding: 0 $padding-lg;
+                    margin: $margin-sm $margin-lg;
                     p {
                         flex: 1;
                         text-align: left;
                     }
                 }
             }
+
+            i, i:visited {
+                color: $primary_text_color;
+            }
+            i:hover {
+                color: $yellow;
+            }
+
+            section {
+                text-align: center;
+                margin: $margin-sm $margin-lg;
+            }
+
             
+        }
+
+        main#homepage { 
+            h1 {
+                flex: 1;
+            }
+            h2 {
+                flex: 2;
+                @media #{$desktop},#{$laptop} {
+                    display: block;  
+                }                
+            } 
         }
         
         .form-control {

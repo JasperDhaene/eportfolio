@@ -5,11 +5,11 @@ html {
             //see _header.scss
         }
         
-        > main { //CONTENT SECTION
-            
+        > main#portfolio { //CONTENT SECTION
+            display: block;
             
             .project {
-                color: $white;
+                color: $primary_text_color;
                 
                 display: flex;
                 flex-direction: column;
@@ -34,10 +34,8 @@ html {
                     flex-direction: column;
                     flex: 2;
                     text-align: left;
-                    h3 {
+                    h4 {
                         flex: 1;
-                        font-size: 2em;
-                        margin: 10px 0;
                     }
                     p{
                         margin: 10px 0;
@@ -45,13 +43,7 @@ html {
                     }
                 }
             }
-            
-            > h2 {
-                font-size: 5em;
-                text-align: center;
-                color: $purple;
-                margin-bottom: 30px;
-            } 
+  
         }
         
         footer {
