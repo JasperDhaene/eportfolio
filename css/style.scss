@@ -37,21 +37,15 @@ html {
 
     body {
         height: 100%;
-        font-family: 'Nunito','Droid Sans', sans-serif; //TODO: decide what to do with font
+        font-family: 'Nunito','Droid Sans', sans-serif;
         
         
         background-color: $black;
-        //background-image: url(../images/background_small.jpg);
-        //background-image: url(../images/hue1.png);
         background-image: url(../images/bg3.jpeg);
-
         background-repeat: no-repeat;
         
         
         @media #{$desktop},#{$laptop}  {
-            //background-image: url(../hue/26.png);
-            //background-image: url(../hue/28.png);
-            //background-image: url(../hue/43-Black%20Sands.png);
             background-image: url(../images/background9.jpg);
             background-size: cover;
         }
@@ -120,11 +114,6 @@ html {
 
             h6 {
                 
-            }
-            
-            //about styling below
-            > p{
-                //padding: 0 5%;
             }
 
             section {
