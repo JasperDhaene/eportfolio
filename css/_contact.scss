@@ -8,8 +8,12 @@ html {
             
             form {
                 padding: 0 10%;
-                @media #{$desktop}, #{$laptop} {
+                @media #{$laptop} {
                     padding: 10% 30%;
+                    width: 50%;
+                }
+                @media #{$desktop} {
+                    padding: 10% 0;
                     width: 50%;
                 }
             
@@ -28,6 +32,10 @@ html {
                     border-radius: 10px;
                     text-align: center;
                     width: 50%;
+                    
+                    @media #{$desktop} {
+                        width: 20%;    
+                    }
                 }
                 input[type=text], input[type=email] {
                     @extend input[type=submit];
@@ -45,6 +53,10 @@ html {
                 textarea{
                     @extend input[type=text];
                     min-height: 4em;
+                    
+                    @media #{$desktop} {
+                        min-height: 8em;    
+                    }
                 }
 
                 input[type=submit]:hover {

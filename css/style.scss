@@ -7,7 +7,8 @@ $green: #033;
 $yellow: #fff247;// //fff9ff
 $facebook-blue:  #3B5998;
 $gmail-red: #CC181E;
-$github-gray: #3f3c3c;
+$github-gray: #666161;
+$github-black: #252323;
 $background-black: #222428;
 $primary_text_color: #fff9ff;
 
@@ -51,7 +52,7 @@ html {
             //background-image: url(../hue/26.png);
             //background-image: url(../hue/28.png);
             //background-image: url(../hue/43-Black%20Sands.png);
-            background-image: url(../images/bg3.jpeg);
+            background-image: url(../images/background9.jpg);
             background-size: cover;
         }
 
@@ -123,7 +124,7 @@ html {
             
             //about styling below
             > p{
-                padding: 0 5%;
+                //padding: 0 5%;
             }
 
             section {
@@ -206,9 +207,13 @@ html {
             background: white;
             color: $black;
             
-            @media #{$desktop},#{$laptop} {
+            @media #{$laptop} {
                 width: 20%;
             }
+            @media #{$desktop} {
+                width: 12%;
+            }
+
         }
         
         footer {

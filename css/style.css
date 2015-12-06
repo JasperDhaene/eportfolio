@@ -116,8 +116,8 @@ html body footer {
       border-color: #3B5998;
       color: #3B5998; }
     html body footer a:nth-child(2), html body footer a:visited:nth-child(2) {
-      border-color: #3f3c3c;
-      color: #3f3c3c; }
+      border-color: #666161;
+      color: #666161; }
     html body footer a:nth-child(3), html body footer a:visited:nth-child(3) {
       border-color: #CC181E;
       color: #CC181E; }
@@ -137,8 +137,8 @@ html body footer {
           border-color: #3B5998;
           color: #3B5998; }
         html body footer a:nth-child(2):hover, html body footer a:visited:nth-child(2):hover {
-          border-color: #3f3c3c;
-          color: #3f3c3c; }
+          border-color: #252323;
+          color: #252323; }
         html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
           border-color: #CC181E;
           color: #CC181E; } }
@@ -200,9 +200,13 @@ html body footer {
   font-style: normal; }
 html body > main form {
   padding: 0 10%; }
-  @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+  @media (min-width: 769px) and (max-width: 1366px) {
     html body > main form {
       padding: 10% 30%;
+      width: 50%; } }
+  @media (min-width: 1366px) {
+    html body > main form {
+      padding: 10% 0;
       width: 50%; } }
   html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
     display: block;
@@ -217,6 +221,9 @@ html body > main form {
     border-radius: 10px;
     text-align: center;
     width: 50%; }
+    @media (min-width: 1366px) {
+      html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
+        width: 20%; } }
   html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
     margin: 20px auto;
     text-align: left;
@@ -228,6 +235,9 @@ html body > main form {
     width: 100%; }
   html body > main form textarea {
     min-height: 4em; }
+    @media (min-width: 1366px) {
+      html body > main form textarea {
+        min-height: 8em; } }
   html body > main form input[type=submit]:hover, html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
     background-color: #fff9ff;
     color: #392a6d; }
@@ -286,9 +296,13 @@ html body > main#portfolio {
     width: auto;
     text-align: center;
     margin: 0 auto 20% auto; }
-    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+    @media (min-width: 769px) and (max-width: 1366px) {
       html body > main#portfolio > p {
         padding: 15% 0; } }
+    @media (min-width: 1366px) {
+      html body > main#portfolio > p {
+        padding: 25% 0;
+        font-size: 2em; } }
   html body > main#portfolio section.project {
     margin: 5% 0; }
     html body > main#portfolio section.project picture {
@@ -323,7 +337,7 @@ html {
     background-repeat: no-repeat; }
     @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
       html body {
-        background-image: url(../images/bg3.jpeg);
+        background-image: url(../images/background9.jpg);
         background-size: cover; } }
     html body a, html body a:visited {
       color: inherit;
@@ -363,8 +377,6 @@ html {
         font-size: 2em; }
       html body > main h5 {
         color: #3B5998; }
-      html body > main > p {
-        padding: 0 5%; }
       html body > main section {
         display: flex;
         flex-direction: column;
@@ -415,8 +427,11 @@ html {
       margin: 20px auto 0 auto;
       background: white;
       color: #111111; }
-      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      @media (min-width: 769px) and (max-width: 1366px) {
         html body .dl_button {
           width: 20%; } }
+      @media (min-width: 1366px) {
+        html body .dl_button {
+          width: 12%; } }
 
 /*# sourceMappingURL=style.css.map */
